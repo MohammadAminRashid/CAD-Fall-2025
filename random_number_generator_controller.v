@@ -6,10 +6,10 @@ reg [1:0] ps , ns;
 parameter [1:0] idle = 2'd0 , A = 2'd1 , B = 2'd2;
 
 
-always@(*) 
+always@() 
     begin
-        case(ps)
-            idle : if(start == 0) ns=idle;
+        case(ps , start_rnd , co)
+            idle : if(start_rnd == 0) ns=idle;
                     else ns = A;
             A : if(co == 0) ns=A;
                 else ns = B;
