@@ -5,6 +5,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	random_number_generator
 
+} {} {}} {E:/Mr Mohammad/UT/t5/CAD/CAs/CAD-Fall-04/rng_TB.v} {1 {vlog -work work -stats=none {E:/Mr Mohammad/UT/t5/CAD/CAs/CAD-Fall-04/rng_TB.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module rng_TB
+
+Top level modules:
+	rng_TB
+
 } {} {}} {E:/Mr Mohammad/UT/t5/CAD/CAs/CAD-Fall-04/counter.v} {1 {vlog -work work -stats=none {E:/Mr Mohammad/UT/t5/CAD/CAs/CAD-Fall-04/counter.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module counter

@@ -2,6 +2,9 @@ module hash_generator_dp(
     input[31:0] a0 , b0 , c0 , d0,constant,
     input clk,rst, en ,  sa , sb , sc , sd,sf,loada, loadb , loadc, loadd,loadf,
     input [1:0]s1
+    output [127:0] hash;
+    output [5:0] out_counter;
+    output co;
 );
 
 wire co;
@@ -36,5 +39,7 @@ mux4to1 #(32) mux(A,B,C,D,s1,mux4to1_out);
 
 ALU #(32)alu (A,B,C,D,out_counter[5:4],f0);
 left_rotate #(32) lf(F , out_counter , left_rotate_out);
+
+assign hash = {A,B,C,D};
 
 endmodule
