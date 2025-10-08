@@ -1,10 +1,11 @@
 module random_number_generator_dp (
-input clk, load_SR, en_SR, par_load , en_count , rst_count,
+input clk, load_SR, en_SR , en_count , rst_count,
+input [5:0] par_load ,
 output [1:0] rnd,
 output co 
 );
 
-wire SerIn, co;
+wire SerIn;
 wire[5:0] out;
 wire [2:0] out_counter;
 shift_register #(6) sr(clk , en_SR ,load_SR , SerIn , par_load , out );

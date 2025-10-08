@@ -5,7 +5,7 @@ module counter #(parameter N=3)(
     output reg [N-1:0] W 
 );
 
-always @(posedge clk or posedge reset) begin
+always @(posedge clk or posedge rst_count) begin
    if(rst_count)
         W<={N{1'b0}};
    else if(en_count)

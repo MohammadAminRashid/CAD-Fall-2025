@@ -6,9 +6,9 @@ reg [1:0] ps , ns;
 parameter [1:0] idle = 2'd0 , A = 2'd1 , B = 2'd2;
 
 
-always@() 
+always@(ps , start_rnd , co) 
     begin
-        case(ps , start_rnd , co)
+        case(ps)
             idle : if(start_rnd == 0) ns=idle;
                     else ns = A;
             A : if(co == 0) ns=A;
@@ -18,7 +18,7 @@ always@()
         endcase
     end
 
-    always@(*)
+    always@(ps)
     begin
         load_SR = 0 ; en_SR = 0 ; en_count = 0 ; rst_count = 0 ; done_rnd = 0;
         case(ps)
