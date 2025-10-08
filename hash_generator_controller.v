@@ -30,11 +30,18 @@ always@(ps , start , co , done_rnd)
 
     always@(ps)
     begin
-        load_SR = 0 ; en_SR = 0 ; en_count = 0 ; rst_count = 0 ; done_rnd = 0;
-        case(ps)
-            idle : begin load_SR = 1 ; rst_count = 1 ; end 
-            A : begin en_count = 1 ; en_SR = 1; end
-            B : begin done_rnd = 1 ; end 
+        en = 0 ; sa = 0 ; sb = 0 ; sc = 0 ; sd = 0; sf = 0; loada = 0; loadb = 0; loadc = 0;  loadd = 0; loadf = 0; s1 = 0;
+        case(ps) 
+            S1 : begin loada = 1 ; loadb = 1 ; loadc = 1 ; loadd = 1 ;; end
+            S2 : begin loadf = 1 ; end 
+            S3 : begin start_rnd = 1 ; end
+            S5 : begin loadf = 1 ; sf = 1 ;end
+            S6 : begin loada = 1 ; sa = 1 ; end
+            S7 : begin loadd = 1 ; sd = 1 ; end
+            S8 : begin loadc = 1 ; sc = 1 ; end
+            S9 : begin loadb = 1 ; sb = 1 ; end
+            S10 : begin done = 1 ; end
+            S11 : begin en = 1 ; end
         endcase 
     end
 
