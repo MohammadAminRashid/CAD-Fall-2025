@@ -12,8 +12,9 @@ module rng_TB();
     end
     initial begin
         rst = 1;
-        par_load = 6'd56;
+        par_load = 6'd42;
         #10
+        rst = 0;
         start_rnd = 1;
         #9 start_rnd = 0;
         #90 

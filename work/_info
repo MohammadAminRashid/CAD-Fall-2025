@@ -10,7 +10,7 @@ z2
 cModel Technology
 dE:/Mr Mohammad/C++ projects/star combat/CA-Projects/CA3/code
 vcounter
-Z0 !s110 1759904355
+Z0 !s110 1759917205
 !i10b 1
 !s100 5djjR]jg`aQXPVQfeOE;93
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -20,18 +20,18 @@ Z3 dE:/Mr Mohammad/UT/t5/CAD/CAs/CAD-Fall-04
 w1759902671
 8E:/Mr Mohammad/UT/t5/CAD/CAs/CAD-Fall-04/counter.v
 FE:/Mr Mohammad/UT/t5/CAD/CAs/CAD-Fall-04/counter.v
-!i122 16
+!i122 34
 L0 1 18
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1759904355.000000
+!s108 1759917204.000000
 !s107 E:/Mr Mohammad/UT/t5/CAD/CAs/CAD-Fall-04/counter.v|
 !s90 -reportprogress|300|-work|work|-stats=none|E:/Mr Mohammad/UT/t5/CAD/CAs/CAD-Fall-04/counter.v|
 !i113 1
-Z6 o-work work
-Z7 tCvgOpt 0
+Z5 o-work work
+Z6 tCvgOpt 0
 vrandom_number_generator
 R0
 !i10b 1
@@ -43,20 +43,20 @@ R3
 w1759902508
 8E:/Mr Mohammad/UT/t5/CAD/CAs/CAD-Fall-04/random_number_generator.v
 FE:/Mr Mohammad/UT/t5/CAD/CAs/CAD-Fall-04/random_number_generator.v
-!i122 17
+!i122 35
 L0 1 12
 R4
 r1
 !s85 0
 31
-R5
+Z7 !s108 1759917205.000000
 !s107 E:/Mr Mohammad/UT/t5/CAD/CAs/CAD-Fall-04/random_number_generator.v|
 !s90 -reportprogress|300|-work|work|-stats=none|E:/Mr Mohammad/UT/t5/CAD/CAs/CAD-Fall-04/random_number_generator.v|
 !i113 1
+R5
 R6
-R7
 vrandom_number_generator_controller
-Z8 !s110 1759904356
+R0
 !i10b 1
 !s100 i3e_Mk2=ahQU=Sg5d<V@73
 R1
@@ -66,20 +66,20 @@ R3
 w1759902801
 8E:/Mr Mohammad/UT/t5/CAD/CAs/CAD-Fall-04/random_number_generator_controller.v
 FE:/Mr Mohammad/UT/t5/CAD/CAs/CAD-Fall-04/random_number_generator_controller.v
-!i122 18
+!i122 36
 L0 1 37
 R4
 r1
 !s85 0
 31
-Z9 !s108 1759904356.000000
+R7
 !s107 E:/Mr Mohammad/UT/t5/CAD/CAs/CAD-Fall-04/random_number_generator_controller.v|
 !s90 -reportprogress|300|-work|work|-stats=none|E:/Mr Mohammad/UT/t5/CAD/CAs/CAD-Fall-04/random_number_generator_controller.v|
 !i113 1
+R5
 R6
-R7
 vrandom_number_generator_dp
-R8
+R0
 !i10b 1
 !s100 0]`4kGCI6`^kilA_NVRCk1
 R1
@@ -89,44 +89,44 @@ R3
 w1759903052
 8E:/Mr Mohammad/UT/t5/CAD/CAs/CAD-Fall-04/random_number_generator_dp.v
 FE:/Mr Mohammad/UT/t5/CAD/CAs/CAD-Fall-04/random_number_generator_dp.v
-!i122 19
+!i122 37
 L0 1 17
 R4
 r1
 !s85 0
 31
-R9
+R7
 !s107 E:/Mr Mohammad/UT/t5/CAD/CAs/CAD-Fall-04/random_number_generator_dp.v|
 !s90 -reportprogress|300|-work|work|-stats=none|E:/Mr Mohammad/UT/t5/CAD/CAs/CAD-Fall-04/random_number_generator_dp.v|
 !i113 1
+R5
 R6
-R7
 vrng_TB
-R8
+R0
 !i10b 1
-!s100 :k7a8Q8LBdefnMYJV7?e]3
+!s100 eESL8anP:2O0I;Ro6P3:b1
 R1
-IQSfj8Q4VJn;Iodk=9WNJP3
+I^cFRHK8@@D45WNeIT6eUM3
 R2
 R3
-w1759904350
+w1759917197
 8E:/Mr Mohammad/UT/t5/CAD/CAs/CAD-Fall-04/rng_TB.v
 FE:/Mr Mohammad/UT/t5/CAD/CAs/CAD-Fall-04/rng_TB.v
-!i122 21
-L0 1 26
+!i122 39
+L0 1 27
 R4
 r1
 !s85 0
 31
-R9
+R7
 !s107 E:/Mr Mohammad/UT/t5/CAD/CAs/CAD-Fall-04/rng_TB.v|
 !s90 -reportprogress|300|-work|work|-stats=none|E:/Mr Mohammad/UT/t5/CAD/CAs/CAD-Fall-04/rng_TB.v|
 !i113 1
+R5
 R6
-R7
 nrng_@t@b
 vshift_register
-R8
+R0
 !i10b 1
 !s100 Z>0^e?l:;?YIVKQ^Km^2:2
 R1
@@ -136,15 +136,15 @@ R3
 w1759856754
 8E:/Mr Mohammad/UT/t5/CAD/CAs/CAD-Fall-04/shift_register.v
 FE:/Mr Mohammad/UT/t5/CAD/CAs/CAD-Fall-04/shift_register.v
-!i122 20
+!i122 38
 L0 1 13
 R4
 r1
 !s85 0
 31
-R9
+R7
 !s107 E:/Mr Mohammad/UT/t5/CAD/CAs/CAD-Fall-04/shift_register.v|
 !s90 -reportprogress|300|-work|work|-stats=none|E:/Mr Mohammad/UT/t5/CAD/CAs/CAD-Fall-04/shift_register.v|
 !i113 1
+R5
 R6
-R7
