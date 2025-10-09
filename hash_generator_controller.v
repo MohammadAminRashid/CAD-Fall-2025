@@ -1,6 +1,6 @@
-module hash_generator_controller(clk , rst , start , co , done_rnd , start_rnd , en ,  sa , sb , sc , sd,sf,loada, loadb , loadc, loadd,loadf , done);
+module hash_generator_controller(clk , rst , start , co , done_rnd , start_rnd , en ,  sa , sb , sc , sd,sf,loada, loadb , loadc, loadd,loadf,loadm , done);
 input clk , rst , start , co , done_rnd;
-output reg start_rnd , en ,  sa , sb , sc , sd,sf,loada, loadb , loadc, loadd,loadf , done;
+output reg start_rnd , en ,  sa , sb , sc , sd,sf,loada, loadb , loadc, loadd,loadf,loadm , done;
 
 reg [3:0] ps , ns;
 parameter [3:0] idle = 4'd0 , S1 = 4'd1 , S2 = 4'd2 , S3 = 4'd3 , S4 = 4'd4 , S5 = 4'd5 , S6 = 4'd6 , S7 = 4'd7 , S8 = 4'd8 , S9 = 4'd9 , S10 = 4'd10 , S11 = 4'd11;
@@ -30,9 +30,9 @@ always@(ps , start , co , done_rnd)
 
     always@(ps)
     begin
-        en = 0 ; sa = 0 ; sb = 0 ; sc = 0 ; sd = 0; sf = 0; loada = 0; loadb = 0; loadc = 0;  loadd = 0; loadf = 0; done = 0 ;
+        en = 0 ; sa = 0 ; sb = 0 ; sc = 0 ; sd = 0; sf = 0; loada = 0; loadb = 0; loadc = 0;  loadd = 0; loadf = 0; loadm = 0; done = 0 ;
         case(ps) 
-            S1 : begin loada = 1 ; loadb = 1 ; loadc = 1 ; loadd = 1 ; end
+            S1 : begin loada = 1 ; loadb = 1 ; loadc = 1 ; loadd = 1 ; loadm = 1 ; end
             S2 : begin loadf = 1 ; end 
             S3 : begin start_rnd = 1 ; end
             S5 : begin loadf = 1 ; sf = 1 ;end
