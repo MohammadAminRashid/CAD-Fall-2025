@@ -91,7 +91,7 @@ always @(inp,rotate_index) begin
 
                     end
                     else if(rotate_index[1:0]==`Fourth_Quarter)begin
-                        rotate=23;
+                        rotate=21;
 
 
                     end
