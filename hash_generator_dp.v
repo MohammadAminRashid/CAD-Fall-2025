@@ -1,14 +1,12 @@
 module hash_generator_dp(
     input[31:0] a0 , b0 , c0 , d0,constant,
     input clk,rst, en ,  sa , sb , sc , sd,sf,loada, loadb , loadc, loadd,loadf,
-    input [1:0]s1
-    output [127:0] hash;
-    output [5:0] out_counter;
-    output co;
+    input [1:0]s1,
+    output [127:0] hash,
+    output [5:0] out_counter,
+    output co
 );
 
-wire co;
-wire[5:0] out_counter;
 wire [31:0] A, B, C,D ,F ,f0 ,adder_out_1 , adder_out_2,adder_out_3,adder_out_4, mux4to1_out,
 parload_a ,parload_b ,parload_c ,parload_d,par_load_f;
 

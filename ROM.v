@@ -1,9 +1,5 @@
-`timescale 1ns / 1ns
+module ROM #(parameter BW = 32, parameter N = 64) (addrBus , outBus);
 
-module ROM #(parameter BW = 32 , parameter N  = 64)(
-  input  [ADDR_WIDTH-1:0] addrBus,
-  output [BW-1:0]         outBus
-);
   function integer log2;
     input integer value;
     integer i;
@@ -16,12 +12,15 @@ module ROM #(parameter BW = 32 , parameter N  = 64)(
 
   localparam ADDR_WIDTH = log2(N);
 
+  input  [ADDR_WIDTH-1:0] addrBus;
+  output [BW-1:0]         outBus;
+
   reg [BW-1:0] ROMData [0:N-1];
 
   initial begin
     $readmemh("constant.mem", ROMData, 0, N-1);
   end
-  
+
   assign outBus = ROMData[addrBus];
 
 endmodule
