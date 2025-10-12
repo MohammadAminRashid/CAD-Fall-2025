@@ -1,9 +1,9 @@
-module Top_TB();
+module Top_TB #(parameter WORD_WIDTH = 32)();
     reg clk , rst , start;
-    reg [127:0] msg;
-    reg [31:0] a0,b0,c0,d0;
+    reg [4*WORD_WIDTH-1:0] msg;
+    reg [WORD_WIDTH-1:0] a0,b0,c0,d0;
 
-    wire [127:0] hash;
+    wire [4*WORD_WIDTH-1:0] hash;
     wire done;
 
     Top t1(clk , rst , start , msg ,a0,b0,c0,d0, hash , done);
