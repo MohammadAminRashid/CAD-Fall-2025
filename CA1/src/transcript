@@ -1,0 +1,122 @@
+# Compile of adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of counter.v was successful.
+# Compile of hash_generator.v was successful.
+# Compile of hash_generator_controller.v was successful.
+# Compile of hash_generator_dp.v was successful.
+# Compile of left_rotate.v was successful.
+# Compile of mux2to1.v was successful.
+# Compile of mux4to1.v was successful.
+# Compile of random_number_generator.v was successful.
+# Compile of random_number_generator_controller.v was successful.
+# Compile of random_number_generator_dp.v was successful.
+# Compile of register.v was successful.
+# Compile of rng_TB.v was successful.
+# Compile of ROM.v was successful.
+# Compile of ROM_TB.v was successful.
+# Compile of shift_register.v was successful.
+# Compile of Top.v was successful.
+# Compile of Top_TB.v was successful.
+# 19 compiles, 0 failed with no errors.
+vsim -gui work.Top_TB
+# vsim -gui work.Top_TB 
+# Start time: 13:48:59 on Oct 21,2025
+# Loading work.Top_TB
+# Loading work.Top
+# Loading work.hash_generator
+# Loading work.hash_generator_dp
+# Loading work.counter
+# Loading work.register
+# Loading work.mux2to1
+# Loading work.adder
+# Loading work.mux4to1
+# Loading work.ALU
+# Loading work.left_rotate
+# Loading work.hash_generator_controller
+# Loading work.ROM
+# Loading work.random_number_generator
+# Loading work.random_number_generator_dp
+# Loading work.shift_register
+# Loading work.random_number_generator_controller
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/Top_TB/clk \
+sim:/Top_TB/rst \
+sim:/Top_TB/start \
+sim:/Top_TB/msg \
+sim:/Top_TB/a0 \
+sim:/Top_TB/b0 \
+sim:/Top_TB/c0 \
+sim:/Top_TB/d0 \
+sim:/Top_TB/hash \
+sim:/Top_TB/done
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Asus  Hostname: LAPTOP-F3FQMCQ9  ProcessID: 1280
+#           Attempting to use alternate WLF file "./wlftwrewnf".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftwrewnf
+run -all
+# ** Note: $stop    : C:/Users/Asus/Desktop/CA1CAD/src/Top_TB.v(26)
+#    Time: 30040 ps  Iteration: 0  Instance: /Top_TB
+# Break in Module Top_TB at C:/Users/Asus/Desktop/CA1CAD/src/Top_TB.v line 26
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Compile of adder.v was successful.
+# Compile of ALU.v was successful.
+# Compile of counter.v was successful.
+# Compile of hash_generator.v was successful.
+# Compile of hash_generator_controller.v was successful.
+# Compile of hash_generator_dp.v was successful.
+# Compile of left_rotate.v was successful.
+# Compile of mux2to1.v was successful.
+# Compile of mux4to1.v was successful.
+# Compile of random_number_generator.v was successful.
+# Compile of random_number_generator_controller.v was successful.
+# Compile of random_number_generator_dp.v was successful.
+# Compile of register.v was successful.
+# Compile of rng_TB.v was successful.
+# Compile of ROM.v was successful.
+# Compile of ROM_TB.v was successful.
+# Compile of shift_register.v was successful.
+# Compile of Top.v was successful.
+# Compile of Top_TB.v was successful.
+# 19 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Top_TB
+# Loading work.Top
+# Loading work.hash_generator
+# Loading work.hash_generator_dp
+# Loading work.counter
+# Loading work.register
+# Loading work.mux2to1
+# Loading work.adder
+# Loading work.mux4to1
+# Loading work.ALU
+# Loading work.left_rotate
+# Loading work.hash_generator_controller
+# Loading work.ROM
+# Loading work.random_number_generator
+# Loading work.random_number_generator_dp
+# Loading work.shift_register
+# Loading work.random_number_generator_controller
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/Asus/Desktop/CA1CAD/src/Top_TB.v(26)
+#    Time: 30040 ps  Iteration: 0  Instance: /Top_TB
+# Break in Module Top_TB at C:/Users/Asus/Desktop/CA1CAD/src/Top_TB.v line 26
+# Compile of Top_TB.v was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Top_TB
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/Asus/Desktop/CA1CAD/src/Top_TB.v(26)
+#    Time: 30040 ps  Iteration: 0  Instance: /Top_TB
+# Break in Module Top_TB at C:/Users/Asus/Desktop/CA1CAD/src/Top_TB.v line 26
+# End time: 11:13:35 on Oct 22,2025, Elapsed time: 21:24:36
+# Errors: 0, Warnings: 1

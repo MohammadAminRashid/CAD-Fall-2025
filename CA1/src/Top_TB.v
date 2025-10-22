@@ -1,12 +1,12 @@
-module Top_TB #(parameter WORD_WIDTH = 32)();
+module Top_TB();
     reg clk , rst , start;
-    reg [4*WORD_WIDTH-1:0] msg;
-    reg [WORD_WIDTH-1:0] a0,b0,c0,d0;
+    reg [127:0] msg;
+    reg [31:0] a0,b0,c0,d0;
 
-    wire [4*WORD_WIDTH-1:0] hash;
+    wire [127:0] hash;
     wire done;
 
-    Top t1(clk , rst , start , msg ,a0,b0,c0,d0, hash , done);
+    Top #(32)t1 (clk , rst , start , msg ,a0,b0,c0,d0, hash , done);
     initial begin  
     clk = 0; 
     forever #1 clk = ~clk;
@@ -18,7 +18,7 @@ module Top_TB #(parameter WORD_WIDTH = 32)();
         d0=32'h10325476;
         rst = 1;
         start = 0;
-        msg = 128'h41a801a8e81df62b14a661b85c97bf45;
+        msg = 128'h6c8728a4103f03b980c436bf819a1a5e;
         #10 rst = 0;
         #10 start = 1;
         #20 start = 0;
@@ -26,3 +26,4 @@ module Top_TB #(parameter WORD_WIDTH = 32)();
         $stop;      
     end
 endmodule
+
