@@ -16,10 +16,10 @@ assign s1={~A_serial[1] , A_serial[1] & i_is_msb};
 assign s2={~A_serial[2] , A_serial[2] & i_is_msb};
 assign s3={~A_serial[3] , A_serial[3] & i_is_msb};
 
-assign I0={{18{B0[15]}}, B0};
-assign I1={{18{B1[15]}}, B1};
-assign I2={{18{B2[15]}}, B2};
-assign I3={{18{B3[15]}}, B3};
+assign I0={{18{mux_out0[15]}}, mux_out0};
+assign I1={{18{mux_out1[15]}}, mux_out1};
+assign I2={{18{mux_out2[15]}}, mux_out2};
+assign I3={{18{mux_out3[15]}}, mux_out3};
 
 assign B0=B[0:15];
 assign B1=B[16:31];
@@ -27,7 +27,7 @@ assign B2=B[32:47];
 assign B3=B[48:63];
 
 
-shift_register #(34) accumulator(clk,1'b1,i_valid,1'b0 , par_load , accumulator_out);
+shift_register #(34) accumulator(clk,rst,!i_is_lsb,i_valid,1'b0 , par_load , accumulator_out);
 twos_complement #(16) tc0(B0,neg_B0);
 twos_complement #(16) tc1(B1,neg_B1);
 twos_complement #(16) tc2(B2,neg_B2);
