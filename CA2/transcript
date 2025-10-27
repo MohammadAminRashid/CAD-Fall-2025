@@ -11,88 +11,19 @@
 # Compile of t.v was successful.
 # Compile of twos_complement.v was successful.
 # 12 compiles, 2 failed with 8 errors.
-vsim -gui work.stripes_tb
-# vsim -gui work.stripes_tb 
-# Start time: 17:27:58 on Oct 22,2025
-# Loading work.stripes_tb
-# Loading work.stripes
-# Loading work.shift_register
-# Loading work.twos_complement
-# Loading work.mux4to1
-# Loading work.adder4
-# Loading work.adder2
-# Loading work.mux2to1
-# WARNING: No extended dataflow license exists
-add wave -position insertpoint  \
-sim:/stripes_tb/dut/clk \
-sim:/stripes_tb/dut/rst \
-sim:/stripes_tb/dut/B \
-sim:/stripes_tb/dut/A_serial \
-sim:/stripes_tb/dut/initial_sum \
-sim:/stripes_tb/dut/i_is_msb \
-sim:/stripes_tb/dut/i_is_lsb \
-sim:/stripes_tb/dut/i_valid \
-sim:/stripes_tb/dut/out \
-sim:/stripes_tb/dut/I0 \
-sim:/stripes_tb/dut/I1 \
-sim:/stripes_tb/dut/I2 \
-sim:/stripes_tb/dut/I3 \
-sim:/stripes_tb/dut/Y \
-sim:/stripes_tb/dut/par_load \
-sim:/stripes_tb/dut/accumulator_out \
-sim:/stripes_tb/dut/adder_inital_sum_out \
-sim:/stripes_tb/dut/B0 \
-sim:/stripes_tb/dut/B1 \
-sim:/stripes_tb/dut/B2 \
-sim:/stripes_tb/dut/B3 \
-sim:/stripes_tb/dut/neg_B0 \
-sim:/stripes_tb/dut/neg_B1 \
-sim:/stripes_tb/dut/neg_B2 \
-sim:/stripes_tb/dut/neg_B3 \
-sim:/stripes_tb/dut/mux_out0 \
-sim:/stripes_tb/dut/mux_out1 \
-sim:/stripes_tb/dut/mux_out2 \
-sim:/stripes_tb/dut/mux_out3 \
-sim:/stripes_tb/dut/s0 \
-sim:/stripes_tb/dut/s1 \
-sim:/stripes_tb/dut/s2 \
-sim:/stripes_tb/dut/s3
-run -all
-# ** Note: $finish    : C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/t.v(48)
-#    Time: 156 ns  Iteration: 0  Instance: /stripes_tb
-# 1
-# Break in Module stripes_tb at C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/t.v line 48
 # Compile of adder2.v was successful.
 # Compile of adder4.v was successful.
 # Compile of counter.v was successful.
 # Compile of mux2to1.v was successful.
 # Compile of mux4to1.v was successful.
 # Compile of MVM_controller.v failed with 4 errors.
-# Compile of MVM_dp.v was successful.
+# Compile of MVM_dp.v failed with 1 errors.
 # Compile of ROM.v failed with 4 errors.
 # Compile of shift_register.v was successful.
 # Compile of stripes.v was successful.
 # Compile of t.v was successful.
 # Compile of twos_complement.v was successful.
-# 12 compiles, 2 failed with 8 errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.stripes_tb
-# Loading work.stripes
-# Loading work.shift_register
-# Loading work.twos_complement
-# Loading work.mux4to1
-# Loading work.adder4
-# Loading work.adder2
-# Loading work.mux2to1
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $finish    : C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/t.v(48)
-#    Time: 156 ns  Iteration: 0  Instance: /stripes_tb
-# 1
-# Break in Module stripes_tb at C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/t.v line 48
+# 12 compiles, 3 failed with 9 errors.
 # Compile of adder2.v was successful.
 # Compile of adder4.v was successful.
 # Compile of counter.v was successful.
@@ -111,232 +42,89 @@ run -all
 # Compile of counter.v was successful.
 # Compile of mux2to1.v was successful.
 # Compile of mux4to1.v was successful.
-# Compile of MVM_controller.v failed with 4 errors.
+# Compile of MVM_controller.v was successful.
 # Compile of MVM_dp.v was successful.
 # Compile of ROM.v failed with 4 errors.
 # Compile of shift_register.v was successful.
 # Compile of stripes.v was successful.
 # Compile of t.v was successful.
 # Compile of twos_complement.v was successful.
-# 12 compiles, 2 failed with 8 errors.
-# Compile of shift_register.v failed with 1 errors.
-# Compile of shift_register.v was successful.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.stripes_tb
-# Loading work.stripes
-# Loading work.shift_register
-# Loading work.twos_complement
-# Loading work.mux4to1
-# Loading work.adder4
-# Loading work.adder2
-# Loading work.mux2to1
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'accumulator'.  Expected 7, found 6.
-#    Time: 0 ns  Iteration: 0  Instance: /stripes_tb/dut/accumulator File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/stripes.v Line: 30
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (34) for port 'SerIn'. The port definition is at: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/shift_register.v(2).
-#    Time: 0 ns  Iteration: 0  Instance: /stripes_tb/dut/accumulator File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/stripes.v Line: 30
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/stripes.v(30): [TFMPC] - Missing connection for port 'W'.
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $finish    : C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/t.v(48)
-#    Time: 156 ns  Iteration: 0  Instance: /stripes_tb
-# 1
-# Break in Module stripes_tb at C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/t.v line 48
+# 12 compiles, 1 failed with 4 errors.
 # Compile of adder2.v was successful.
 # Compile of adder4.v was successful.
 # Compile of counter.v was successful.
 # Compile of mux2to1.v was successful.
 # Compile of mux4to1.v was successful.
-# Compile of MVM_controller.v failed with 4 errors.
+# Compile of MVM_controller.v was successful.
 # Compile of MVM_dp.v was successful.
 # Compile of ROM.v failed with 4 errors.
 # Compile of shift_register.v was successful.
 # Compile of stripes.v was successful.
 # Compile of t.v was successful.
 # Compile of twos_complement.v was successful.
-# 12 compiles, 2 failed with 8 errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.stripes_tb
-# Loading work.stripes
-# Loading work.shift_register
-# Loading work.twos_complement
-# Loading work.mux4to1
-# Loading work.adder4
-# Loading work.adder2
-# Loading work.mux2to1
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'accumulator'.  Expected 7, found 6.
-#    Time: 0 ns  Iteration: 0  Instance: /stripes_tb/dut/accumulator File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/stripes.v Line: 30
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (34) for port 'SerIn'. The port definition is at: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/shift_register.v(2).
-#    Time: 0 ns  Iteration: 0  Instance: /stripes_tb/dut/accumulator File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/stripes.v Line: 30
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/stripes.v(30): [TFMPC] - Missing connection for port 'W'.
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $finish    : C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/t.v(49)
-#    Time: 157 ns  Iteration: 0  Instance: /stripes_tb
-# 1
-# Break in Module stripes_tb at C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/t.v line 49
+# 12 compiles, 1 failed with 4 errors.
+# Compile of adder2.v was successful.
+# Compile of adder4.v was successful.
+# Compile of counter.v was successful.
+# Compile of mux2to1.v was successful.
+# Compile of mux4to1.v was successful.
+# Compile of MVM_controller.v was successful.
+# Compile of MVM_dp.v was successful.
+# Compile of ROM.v failed with 1 errors.
+# Compile of shift_register.v was successful.
 # Compile of stripes.v was successful.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.stripes
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $finish    : C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/t.v(49)
-#    Time: 157 ns  Iteration: 0  Instance: /stripes_tb
-# 1
-# Break in Module stripes_tb at C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/t.v line 49
 # Compile of t.v was successful.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.stripes_tb
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $finish    : C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/t.v(76)
-#    Time: 167 ns  Iteration: 0  Instance: /stripes_tb
-# 1
-# Break in Module stripes_tb at C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/t.v line 76
-# Compile of t.v was successful.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.stripes_tb
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $finish    : C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/t.v(77)
-#    Time: 197 ns  Iteration: 0  Instance: /stripes_tb
-# 1
-# Break in Module stripes_tb at C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/t.v line 77
+# Compile of twos_complement.v was successful.
+# 12 compiles, 1 failed with 1 error.
+# Compile of adder2.v was successful.
+# Compile of adder4.v was successful.
+# Compile of counter.v was successful.
+# Compile of mux2to1.v was successful.
+# Compile of mux4to1.v was successful.
+# Compile of MVM_controller.v was successful.
+# Compile of MVM_dp.v was successful.
+# Compile of ROM.v failed with 4 errors.
 # Compile of shift_register.v was successful.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.shift_register
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $finish    : C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/t.v(77)
-#    Time: 197 ns  Iteration: 0  Instance: /stripes_tb
-# 1
-# Break in Module stripes_tb at C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/t.v line 77
-# Compile of shift_register.v was successful.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.shift_register
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $finish    : C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/t.v(77)
-#    Time: 197 ns  Iteration: 0  Instance: /stripes_tb
-# 1
-# Break in Module stripes_tb at C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/t.v line 77
-# Compile of shift_register.v was successful.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.shift_register
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $finish    : C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/t.v(77)
-#    Time: 197 ns  Iteration: 0  Instance: /stripes_tb
-# 1
-# Break in Module stripes_tb at C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/t.v line 77
-# Compile of shift_register.v was successful.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.shift_register
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $finish    : C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/t.v(77)
-#    Time: 197 ns  Iteration: 0  Instance: /stripes_tb
-# 1
-# Break in Module stripes_tb at C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/t.v line 77
-# Compile of shift_register.v was successful.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.shift_register
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $finish    : C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/t.v(77)
-#    Time: 197 ns  Iteration: 0  Instance: /stripes_tb
-# 1
-# Break in Module stripes_tb at C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/t.v line 77
-# Compile of shift_register.v was successful.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.shift_register
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-restart -f
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $finish    : C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/t.v(77)
-#    Time: 197 ns  Iteration: 0  Instance: /stripes_tb
-# 1
-# Break in Module stripes_tb at C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/t.v line 77
-# Compile of shift_register.v was successful.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.shift_register
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $finish    : C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/t.v(77)
-#    Time: 197 ns  Iteration: 0  Instance: /stripes_tb
-# 1
-# Break in Module stripes_tb at C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/t.v line 77
-restart -f
-# Compile of shift_register.v was successful.
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $finish    : C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/t.v(77)
-#    Time: 197 ns  Iteration: 0  Instance: /stripes_tb
-# 1
-# Break in Module stripes_tb at C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/t.v line 77
 # Compile of stripes.v was successful.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.stripes
-# Loading work.shift_register
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $finish    : C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/t.v(77)
-#    Time: 197 ns  Iteration: 0  Instance: /stripes_tb
-# 1
-# Break in Module stripes_tb at C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/t.v line 77
+# Compile of t.v was successful.
+# Compile of twos_complement.v was successful.
+# 12 compiles, 1 failed with 4 errors.
+# Compile of adder2.v was successful.
+# Compile of adder4.v was successful.
+# Compile of counter.v was successful.
+# Compile of mux2to1.v was successful.
+# Compile of mux4to1.v was successful.
+# Compile of MVM_controller.v was successful.
+# Compile of MVM_dp.v was successful.
+# Compile of ROM.v failed with 4 errors.
 # Compile of shift_register.v was successful.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.shift_register
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $finish    : C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/t.v(77)
-#    Time: 197 ns  Iteration: 0  Instance: /stripes_tb
-# 1
-# Break in Module stripes_tb at C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/t.v line 77
+# Compile of stripes.v was successful.
+# Compile of t.v was successful.
+# Compile of twos_complement.v was successful.
+# 12 compiles, 1 failed with 4 errors.
+# Compile of adder2.v was successful.
+# Compile of adder4.v was successful.
+# Compile of counter.v was successful.
+# Compile of mux2to1.v was successful.
+# Compile of mux4to1.v was successful.
+# Compile of MVM_controller.v was successful.
+# Compile of MVM_dp.v was successful.
+# Compile of ROM.v was successful.
+# Compile of shift_register.v was successful.
+# Compile of stripes.v was successful.
+# Compile of t.v was successful.
+# Compile of twos_complement.v was successful.
+# 12 compiles, 0 failed with no errors.
+# Compile of adder2.v was successful.
+# Compile of adder4.v was successful.
+# Compile of counter.v was successful.
+# Compile of mux2to1.v was successful.
+# Compile of mux4to1.v was successful.
+# Compile of MVM_controller.v was successful.
+# Compile of MVM_dp.v was successful.
+# Compile of ROM.v was successful.
+# Compile of shift_register.v was successful.
+# Compile of stripes.v was successful.
+# Compile of t.v was successful.
+# Compile of twos_complement.v was successful.
+# 12 compiles, 0 failed with no errors.

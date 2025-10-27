@@ -1,4 +1,4 @@
-module ROM #(parameter BW = 32, parameter N = 64) (input  wire [ADDR_WIDTH-1:0] addrBus,input  wire [BW-1:0] write_data, input  wire write_en,output wire [BW-1:0] outBus);
+module ROM #(parameter BW = 32, parameter N = 64) ( clk,addrBus, write_data, write_en, outBus);
 
   function integer log2;
     input integer value;
@@ -11,6 +11,11 @@ module ROM #(parameter BW = 32, parameter N = 64) (input  wire [ADDR_WIDTH-1:0] 
   endfunction
 
   localparam ADDR_WIDTH = log2(N);
+  input clk;
+  input   [ADDR_WIDTH-1:0] addrBus;
+  input   [BW-1:0] write_data;
+  input   write_en;
+  output  [BW-1:0] outBus;
 
   reg [BW-1:0] ROMData [0:N-1];
 
@@ -18,7 +23,7 @@ module ROM #(parameter BW = 32, parameter N = 64) (input  wire [ADDR_WIDTH-1:0] 
     $readmemh("constant.mem", ROMData, 0, N-1);
   end
 
-  always @(*) begin
+  always @(posedge clk) begin
     if (write_en)
       ROMData[addrBus] = write_data;
   end
@@ -26,3 +31,4 @@ module ROM #(parameter BW = 32, parameter N = 64) (input  wire [ADDR_WIDTH-1:0] 
   assign outBus = ROMData[addrBus];
 
 endmodule
+

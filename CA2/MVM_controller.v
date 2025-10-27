@@ -17,7 +17,7 @@ always@(ps , start , co1 , co2 , co3)
                     else ns = S3;
             S3 : if(co1 == 0) ns=S3;
                     else ns = S4;
-            S4 : if(co2 == 0) ns=S5;
+            S4 : if(co2 == 0) ns=S2;
                     else ns = S5;
             S5 : ns = idle;
             default : ns = 4'bx;         
@@ -28,9 +28,9 @@ always@(ps , start , co1 , co2 , co3)
     begin
         s1 = 0; encnt1 = 0; encnt2 = 0; encnt3 = 0; encnt4 = 0; d1 = 0; d2 = 0; shift_en = 0; i_valid = 0; clear = 0; done = 0;
         case(ps) 
-            idle begin clear = 1; end
+            idle: begin clear = 1; end
             S1 : begin d1 = 1 ; encnt2 = 1 ; end
-            S2 : begin s1 = 1 ; encnt2 = 1 ; encnt3 = 1; end 
+            S2 : begin s1 = 1 ; encnt2 = 1 ; encnt3 = 1;  d2=1 ; end 
             S3 : begin s1 = 1 ; encnt1 = 1 ; encnt4 = 1; i_valid = 1; shift_en = 1; end
             S4 : begin s1 = 1 ;end
             S5 : begin done = 1; end
