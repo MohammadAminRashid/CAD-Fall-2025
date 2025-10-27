@@ -2,7 +2,7 @@ module demux(input SerIn, input [2:0]sel, output reg [7:0] out);
 
     always @(SerIn, sel) begin
 
-        P = 8'b00000000;
+        out = 8'b00000000;
         case(sel)
             3'b000:
                 out[0]=SerIn;
