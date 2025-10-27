@@ -20,7 +20,7 @@ module ROM #(parameter BW = 32, parameter N = 64) ( clk,addrBus, write_data, wri
   reg [BW-1:0] ROMData [0:N-1];
 
   initial begin
-    $readmemh("constant.mem", ROMData, 0, N-1);
+    $readmemh("TestCases\input_memory (1).txt", ROMData, 0, N-1);
   end
 
   always @(posedge clk) begin
