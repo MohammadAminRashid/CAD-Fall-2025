@@ -3,153 +3,6 @@
 # Compile of counter.v was successful.
 # Compile of mux2to1.v was successful.
 # Compile of mux4to1.v was successful.
-# Compile of MVM_controller.v failed with 4 errors.
-# Compile of MVM_dp.v was successful.
-# Compile of ROM.v failed with 4 errors.
-# Compile of shift_register.v was successful.
-# Compile of stripes.v was successful.
-# Compile of t.v was successful.
-# Compile of twos_complement.v was successful.
-# 12 compiles, 2 failed with 8 errors.
-# Compile of adder2.v was successful.
-# Compile of adder4.v was successful.
-# Compile of counter.v was successful.
-# Compile of mux2to1.v was successful.
-# Compile of mux4to1.v was successful.
-# Compile of MVM_controller.v failed with 4 errors.
-# Compile of MVM_dp.v failed with 1 errors.
-# Compile of ROM.v failed with 4 errors.
-# Compile of shift_register.v was successful.
-# Compile of stripes.v was successful.
-# Compile of t.v was successful.
-# Compile of twos_complement.v was successful.
-# 12 compiles, 3 failed with 9 errors.
-# Compile of adder2.v was successful.
-# Compile of adder4.v was successful.
-# Compile of counter.v was successful.
-# Compile of mux2to1.v was successful.
-# Compile of mux4to1.v was successful.
-# Compile of MVM_controller.v failed with 4 errors.
-# Compile of MVM_dp.v was successful.
-# Compile of ROM.v failed with 4 errors.
-# Compile of shift_register.v was successful.
-# Compile of stripes.v was successful.
-# Compile of t.v was successful.
-# Compile of twos_complement.v was successful.
-# 12 compiles, 2 failed with 8 errors.
-# Compile of adder2.v was successful.
-# Compile of adder4.v was successful.
-# Compile of counter.v was successful.
-# Compile of mux2to1.v was successful.
-# Compile of mux4to1.v was successful.
-# Compile of MVM_controller.v was successful.
-# Compile of MVM_dp.v was successful.
-# Compile of ROM.v failed with 4 errors.
-# Compile of shift_register.v was successful.
-# Compile of stripes.v was successful.
-# Compile of t.v was successful.
-# Compile of twos_complement.v was successful.
-# 12 compiles, 1 failed with 4 errors.
-# Compile of adder2.v was successful.
-# Compile of adder4.v was successful.
-# Compile of counter.v was successful.
-# Compile of mux2to1.v was successful.
-# Compile of mux4to1.v was successful.
-# Compile of MVM_controller.v was successful.
-# Compile of MVM_dp.v was successful.
-# Compile of ROM.v failed with 4 errors.
-# Compile of shift_register.v was successful.
-# Compile of stripes.v was successful.
-# Compile of t.v was successful.
-# Compile of twos_complement.v was successful.
-# 12 compiles, 1 failed with 4 errors.
-# Compile of adder2.v was successful.
-# Compile of adder4.v was successful.
-# Compile of counter.v was successful.
-# Compile of mux2to1.v was successful.
-# Compile of mux4to1.v was successful.
-# Compile of MVM_controller.v was successful.
-# Compile of MVM_dp.v was successful.
-# Compile of ROM.v failed with 1 errors.
-# Compile of shift_register.v was successful.
-# Compile of stripes.v was successful.
-# Compile of t.v was successful.
-# Compile of twos_complement.v was successful.
-# 12 compiles, 1 failed with 1 error.
-# Compile of adder2.v was successful.
-# Compile of adder4.v was successful.
-# Compile of counter.v was successful.
-# Compile of mux2to1.v was successful.
-# Compile of mux4to1.v was successful.
-# Compile of MVM_controller.v was successful.
-# Compile of MVM_dp.v was successful.
-# Compile of ROM.v failed with 4 errors.
-# Compile of shift_register.v was successful.
-# Compile of stripes.v was successful.
-# Compile of t.v was successful.
-# Compile of twos_complement.v was successful.
-# 12 compiles, 1 failed with 4 errors.
-# Compile of adder2.v was successful.
-# Compile of adder4.v was successful.
-# Compile of counter.v was successful.
-# Compile of mux2to1.v was successful.
-# Compile of mux4to1.v was successful.
-# Compile of MVM_controller.v was successful.
-# Compile of MVM_dp.v was successful.
-# Compile of ROM.v failed with 4 errors.
-# Compile of shift_register.v was successful.
-# Compile of stripes.v was successful.
-# Compile of t.v was successful.
-# Compile of twos_complement.v was successful.
-# 12 compiles, 1 failed with 4 errors.
-# Compile of adder2.v was successful.
-# Compile of adder4.v was successful.
-# Compile of counter.v was successful.
-# Compile of mux2to1.v was successful.
-# Compile of mux4to1.v was successful.
-# Compile of MVM_controller.v was successful.
-# Compile of MVM_dp.v was successful.
-# Compile of ROM.v was successful.
-# Compile of shift_register.v was successful.
-# Compile of stripes.v was successful.
-# Compile of t.v was successful.
-# Compile of twos_complement.v was successful.
-# 12 compiles, 0 failed with no errors.
-# Compile of adder2.v was successful.
-# Compile of adder4.v was successful.
-# Compile of counter.v was successful.
-# Compile of mux2to1.v was successful.
-# Compile of mux4to1.v was successful.
-# Compile of MVM_controller.v was successful.
-# Compile of MVM_dp.v was successful.
-# Compile of ROM.v was successful.
-# Compile of shift_register.v was successful.
-# Compile of stripes.v was successful.
-# Compile of t.v was successful.
-# Compile of twos_complement.v was successful.
-# 12 compiles, 0 failed with no errors.
-# Compile of adder2.v was successful.
-# Compile of adder4.v was successful.
-# Compile of counter.v was successful.
-# Compile of mux2to1.v was successful.
-# Compile of mux4to1.v was successful.
-# Compile of MVM_controller.v was successful.
-# Compile of MVM_dp.v was successful.
-# Compile of ROM.v was successful.
-# Compile of shift_register.v was successful.
-# Compile of stripes.v was successful.
-# Compile of t.v was successful.
-# Compile of twos_complement.v was successful.
-# Compile of demux.v failed with 1 errors.
-# Compile of register.v was successful.
-# Compile of ring_shift_register.v was successful.
-# Compile of Top.v failed with 1 errors.
-# 16 compiles, 2 failed with 2 errors.
-# Compile of adder2.v was successful.
-# Compile of adder4.v was successful.
-# Compile of counter.v was successful.
-# Compile of mux2to1.v was successful.
-# Compile of mux4to1.v was successful.
 # Compile of MVM_controller.v was successful.
 # Compile of MVM_dp.v was successful.
 # Compile of ROM.v was successful.
@@ -161,4 +14,113 @@
 # Compile of register.v was successful.
 # Compile of ring_shift_register.v was successful.
 # Compile of Top.v was successful.
-# 16 compiles, 0 failed with no errors.
+# Compile of Top_TB.v was successful.
+# 17 compiles, 0 failed with no errors.
+vsim -gui work.Top_TB
+# vsim -gui work.Top_TB 
+# Start time: 09:02:02 on Oct 29,2025
+# Loading work.Top_TB
+# Loading work.MVM_top
+# Loading work.MVM_controller
+# Loading work.MVM_dp
+# Loading work.counter
+# Loading work.mux2to1
+# Loading work.adder2
+# Loading work.ROM
+# Loading work.demux
+# Loading work.stripes
+# Loading work.shift_register
+# Loading work.twos_complement
+# Loading work.mux4to1
+# Loading work.adder4
+# Loading work.register
+# Loading work.ring_shift_register
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (34) for port 'par_load'. The port definition is at: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/register.v(3).
+#    Time: 0 ns  Iteration: 0  Instance: /Top_TB/m1/dp/B0 File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/MVM_dp.v Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (34) for port 'par_load'. The port definition is at: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/register.v(3).
+#    Time: 0 ns  Iteration: 0  Instance: /Top_TB/m1/dp/B1 File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/MVM_dp.v Line: 42
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (34) for port 'par_load'. The port definition is at: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/register.v(3).
+#    Time: 0 ns  Iteration: 0  Instance: /Top_TB/m1/dp/B2 File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/MVM_dp.v Line: 43
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (34) for port 'par_load'. The port definition is at: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/register.v(3).
+#    Time: 0 ns  Iteration: 0  Instance: /Top_TB/m1/dp/B3 File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/MVM_dp.v Line: 44
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (34) for port 'par_load'. The port definition is at: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/register.v(3).
+#    Time: 0 ns  Iteration: 0  Instance: /Top_TB/m1/dp/B4 File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/MVM_dp.v Line: 45
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (34) for port 'par_load'. The port definition is at: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/register.v(3).
+#    Time: 0 ns  Iteration: 0  Instance: /Top_TB/m1/dp/B5 File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/MVM_dp.v Line: 46
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (34) for port 'par_load'. The port definition is at: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/register.v(3).
+#    Time: 0 ns  Iteration: 0  Instance: /Top_TB/m1/dp/B6 File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/MVM_dp.v Line: 47
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (34) for port 'par_load'. The port definition is at: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/register.v(3).
+#    Time: 0 ns  Iteration: 0  Instance: /Top_TB/m1/dp/B7 File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/MVM_dp.v Line: 48
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'load'. The port definition is at: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/register.v(2).
+#    Time: 0 ns  Iteration: 0  Instance: /Top_TB/m1/dp/carry_out File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/MVM_dp.v Line: 50
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (34) for port 'par_load'. The port definition is at: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/ring_shift_register.v(3).
+#    Time: 0 ns  Iteration: 0  Instance: /Top_TB/m1/dp/a0 File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/MVM_dp.v Line: 54
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (34) for port 'par_load'. The port definition is at: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/ring_shift_register.v(3).
+#    Time: 0 ns  Iteration: 0  Instance: /Top_TB/m1/dp/a1 File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/MVM_dp.v Line: 55
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (34) for port 'par_load'. The port definition is at: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/ring_shift_register.v(3).
+#    Time: 0 ns  Iteration: 0  Instance: /Top_TB/m1/dp/a2 File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/MVM_dp.v Line: 56
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (34) for port 'par_load'. The port definition is at: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/ring_shift_register.v(3).
+#    Time: 0 ns  Iteration: 0  Instance: /Top_TB/m1/dp/a3 File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/MVM_dp.v Line: 57
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (34) for port 'par_load'. The port definition is at: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/ring_shift_register.v(3).
+#    Time: 0 ns  Iteration: 0  Instance: /Top_TB/m1/dp/a4 File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/MVM_dp.v Line: 58
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (34) for port 'par_load'. The port definition is at: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/ring_shift_register.v(3).
+#    Time: 0 ns  Iteration: 0  Instance: /Top_TB/m1/dp/a5 File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/MVM_dp.v Line: 59
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (34) for port 'par_load'. The port definition is at: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/ring_shift_register.v(3).
+#    Time: 0 ns  Iteration: 0  Instance: /Top_TB/m1/dp/a6 File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/MVM_dp.v Line: 60
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (34) for port 'par_load'. The port definition is at: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/ring_shift_register.v(3).
+#    Time: 0 ns  Iteration: 0  Instance: /Top_TB/m1/dp/a7 File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/MVM_dp.v Line: 61
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/Top_TB/m1/dp/clk \
+sim:/Top_TB/m1/dp/rst \
+sim:/Top_TB/m1/dp/s1 \
+sim:/Top_TB/m1/dp/encnt1 \
+sim:/Top_TB/m1/dp/encnt2 \
+sim:/Top_TB/m1/dp/encnt3 \
+sim:/Top_TB/m1/dp/encnt4 \
+sim:/Top_TB/m1/dp/d1 \
+sim:/Top_TB/m1/dp/d2 \
+sim:/Top_TB/m1/dp/shift_en \
+sim:/Top_TB/m1/dp/i_valid \
+sim:/Top_TB/m1/dp/write \
+sim:/Top_TB/m1/dp/dummy \
+sim:/Top_TB/m1/dp/stripes_rst \
+sim:/Top_TB/m1/dp/co1 \
+sim:/Top_TB/m1/dp/co2 \
+sim:/Top_TB/m1/dp/co3 \
+sim:/Top_TB/m1/dp/w2 \
+sim:/Top_TB/m1/dp/w3 \
+sim:/Top_TB/m1/dp/co4 \
+sim:/Top_TB/m1/dp/outcnt3 \
+sim:/Top_TB/m1/dp/outcnt1 \
+sim:/Top_TB/m1/dp/outcnt4 \
+sim:/Top_TB/m1/dp/u1 \
+sim:/Top_TB/m1/dp/adr \
+sim:/Top_TB/m1/dp/outcnt2 \
+sim:/Top_TB/m1/dp/w1 \
+sim:/Top_TB/m1/dp/w_data \
+sim:/Top_TB/m1/dp/r_data \
+sim:/Top_TB/m1/dp/PE1_out \
+sim:/Top_TB/m1/dp/PE2_out \
+sim:/Top_TB/m1/dp/load_a \
+sim:/Top_TB/m1/dp/load_b \
+sim:/Top_TB/m1/dp/B \
+sim:/Top_TB/m1/dp/a \
+sim:/Top_TB/m1/dp/w4
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Asus  Hostname: LAPTOP-F3FQMCQ9  ProcessID: 26788
+#           Attempting to use alternate WLF file "./wlfts1sk58".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfts1sk58
+add wave -position insertpoint  \
+sim:/Top_TB/clk \
+sim:/Top_TB/rst \
+sim:/Top_TB/start \
+sim:/Top_TB/done
+run -all
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 72 of file "TestCases/input_memory (2).txt". Expected 128, found 72.    : C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/ROM.v(23)
+#    Time: 0 ns  Iteration: 0  Instance: /Top_TB/m1/dp/ROM_module
+# ** Note: $finish    : C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/Top_TB.v(20)
+#    Time: 6024 ns  Iteration: 0  Instance: /Top_TB
+# 1
+# Break in Module Top_TB at C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA2/Top_TB.v line 20

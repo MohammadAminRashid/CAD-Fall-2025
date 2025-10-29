@@ -8,13 +8,14 @@ module Top_TB;
     always #5 clk = ~clk;
 
     initial begin
+        clk=0;
         rst = 1;
         start = 0;
         #12 rst = 0;
         start = 1;
         #12
         start = 0;
-        #10000
+        #6000
 
         $finish;
     end

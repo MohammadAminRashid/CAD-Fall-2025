@@ -37,11 +37,10 @@ module stripes_tb;
 
         #2
         i_is_msb = 1;
+        A_serial = 4'b0000;
         i_valid = 1;
         #12
         i_is_msb=0;
-        A_serial = 4'b0000;
-        #10
             A_serial = 4'b0000;
         #10
             A_serial = 4'b0000;
@@ -68,10 +67,11 @@ module stripes_tb;
         #10
             A_serial = 4'b0111;
         #10
-             i_is_lsb=1;
+            i_is_lsb=1;
             A_serial = 4'b1100;
         #10
         i_is_lsb=0;
+        #10
         #30
 
         $finish;
