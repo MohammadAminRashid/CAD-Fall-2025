@@ -1,6 +1,6 @@
 `timescale 1ns/1ns
 
-module stripes_tb;
+module stripes_tb_2;
 
     reg clk, rst;
     reg [0:63] B;
@@ -27,7 +27,7 @@ module stripes_tb;
         #1
         clk = 0;
         rst = 1;
-        B = 64'h0003_0005_0005_0001;
+        B = 64'h0002_0006_FFFF_0007;
         A_serial = 4'b0000;
         initial_sum = 34'd0;
         i_is_msb = 0;
@@ -37,38 +37,38 @@ module stripes_tb;
 
         #2
         i_is_msb = 1;
-        A_serial = 4'b0000;
+        A_serial = 4'b0100;
         i_valid = 1;
         #9
         i_is_msb=0;
-            A_serial = 4'b0000;
+            A_serial = 4'b0100;
         #10
-            A_serial = 4'b0000;
+            A_serial = 4'b0100;
         #10
-            A_serial = 4'b0000;
+            A_serial = 4'b0100;
         #10
-            A_serial = 4'b0000;
+            A_serial = 4'b0100;
         #10
-            A_serial = 4'b0000;
+            A_serial = 4'b0100;
         #10
-            A_serial = 4'b0000;
+            A_serial = 4'b0100;
         #10
-            A_serial = 4'b0000;
+            A_serial = 4'b0100;
         #10
-            A_serial = 4'b0000;
+            A_serial = 4'b0100;
         #10
-            A_serial = 4'b0000;
+            A_serial = 4'b0100;
         #10
-            A_serial = 4'b0000;
+            A_serial = 4'b0100;
         #10
-            A_serial = 4'b0000;
+            A_serial = 4'b0100;
         #10
-            A_serial = 4'b0010;
+            A_serial = 4'b0110;
         #10
-            A_serial = 4'b0111;
+            A_serial = 4'b0011;
         #10
             i_is_lsb=1;
-            A_serial = 4'b1100;
+            A_serial = 4'b1001;
         #10
         i_is_lsb=0;
         #10
