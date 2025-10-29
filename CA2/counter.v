@@ -14,5 +14,5 @@ always @(posedge clk or posedge rst_count) begin
    
 end
 
-   assign co = (W==upper_bound) ? 1 : 0 ;
+   assign co = (W>=upper_bound) ? 1 : 0 ;
 endmodule
