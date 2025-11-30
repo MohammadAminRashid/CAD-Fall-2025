@@ -3,7 +3,7 @@
 module Regs_TB;
 
     reg clk;
-    reg reset, load;
+    reg rst, load;
     reg [31:0] par_load_reg;
     wire [31:0] Wreg;
 
@@ -14,7 +14,7 @@ module Regs_TB;
     register #(32) UREG (
         .clk(clk),
         .load(load),
-        .reset(reset),
+        .rst(rst),
         .par_load(par_load_reg),
         .W(Wreg)
     );
@@ -35,9 +35,9 @@ module Regs_TB;
         //reg
         clk = 0;
 
-        reset = 1; load = 0; par_load_reg = 0;
+        rst = 1; load = 0; par_load_reg = 0;
         #10;
-        reset = 0;
+        rst = 0;
 
         par_load_reg = 32'hA5A5_F00D;
         load = 1;

@@ -3,39 +3,43 @@ module shift_register #(parameter N = 6)(
     input en_SR,
     input load_SR,
     input SerIn,
-    input [N-1:0] par_load,
+    input  [N-1:0] par_load,
     output [N-1:0] W
 );
+
+    s2 s2_bit0 (
+        .D00(W[0]),      
+        .D01(par_load[0]),    
+        .D10(SerIn),           
+        .D11(par_load[0]),
+        .A1(en_SR ),
+        .B1(1'b0),
+        .A0(load_SR),
+        .B0(1'b1),
+        .clr(1'b0),
+        .clk(clk),
+        .out(W[0])
+    );
+
     genvar i;
     generate
-        for (i = 0; i < N; i = i + 1) begin : gen_shift
-            // D00 = hold (W[i])
-            // D01 = parallel load bit
-            // D10 = shifted-in value: bit (i==0 ? SerIn : W[i-1])
-            // D11 = unused (tie 0)
-            //
-            // Control wiring:
-            // A1 = en_SR & ~load_SR, B1 = 1'b0  => s1 = en_SR & ~load_SR
-            // A0 = load_SR,         B0 = load_SR => s0 = load_SR
-            // This yields:
-            //  load_SR == 1  -> s1=0, s0=1 -> selects D01 (parallel load)
-            //  load_SR == 0 && en_SR == 1 -> s1=1, s0=0 -> selects D10 (shift)
-            //  neither -> s1=0, s0=0 -> selects D00 (hold)
-            wire d10 = (i == 0) ? SerIn : W[i-1];
+        for (i = 1; i < N; i = i + 1) begin : gen_shift
+            s2 s2_inst (
+                .D00(W[i]),         
+                .D01(par_load[i]),   
+                .D10(W[i-1]),        
+                .D11(par_load[i]),
 
-            s2 s2_inst_sr (
-                .D00(W[i]),
-                .D01(par_load[i]),
-                .D10(d10),
-                .D11(1'b0),
-                .A1(en_SR & ~load_SR),
+                .A1(en_SR),
                 .B1(1'b0),
                 .A0(load_SR),
-                .B0(load_SR),
-                .clr(1'b0),   
+                .B0(1'b1),
+
+                .clr(1'b0),
                 .clk(clk),
                 .out(W[i])
             );
         end
     endgenerate
+
 endmodule
