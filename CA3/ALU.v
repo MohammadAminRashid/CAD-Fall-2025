@@ -9,7 +9,7 @@
 module ALU #(parameter N=8)(
  input [N-1:0] A,B,C,D,
  input [1:0] opc,
- output reg [N-1:0] out
+ output  [N-1:0] out
   );
 genvar i;
 generate
