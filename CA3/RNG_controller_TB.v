@@ -55,17 +55,19 @@ module tb_rng_controller;
                  load_SR_oh, en_SR_oh, done_rnd_oh);
 
         // 1. Reset Pulse
-        #50;
+        #20;
+ 
         rst = 0;
+        #50
+        start_rnd = 1;
         $display("--- Reset Released ---");
 
         // 2. Wait in IDLE state
         #20;
+        start_rnd = 0; // Pulse start
         
         // 3. Start signal pulse
-        start_rnd = 1;
         #10;
-        start_rnd = 0; // Pulse start
         $display("--- Start Signal Pulsed ---");
 
         // 4. Wait in State A (Counting)
