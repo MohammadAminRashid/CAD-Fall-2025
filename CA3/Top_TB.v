@@ -22,7 +22,7 @@ module Top_TB();
         #10 rst = 0;
         #10 start = 1;
         #20 start = 0;
-        #30000;
+        #3000;
         $stop;      
     end
 endmodule
