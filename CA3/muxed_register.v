@@ -1,4 +1,4 @@
-module muxed_reg #(parameter N = 8)(
+module muxed_register #(parameter N = 8)(
     input clk,
     input rst,
     input load,
