@@ -44,10 +44,10 @@ module tb_ALU;
                 #5;
 
                 if (out_gen !== out_p) begin
-                    $display("❌ MISMATCH at test=%0d opc=%b\n A=%h B=%h C=%h D=%h \n out_gen=%h out_p=%h",
+                    $display("MISMATCH at test=%0d opc=%b\n A=%h B=%h C=%h D=%h \n out_gen=%h out_p=%h",
                               t, opc, A, B, C, D, out_gen, out_p);
                 end else begin
-                    $display("✔ MATCH test=%0d opc=%b out=%h", t, opc, out_gen);
+                    $display("MATCH test=%0d opc=%b out=%h", t, opc, out_gen);
                 end
             end
         end

@@ -19,13 +19,11 @@ counter #(N) uut (
     .W(W)
 );
 
-// ------------------- Clock Generator -------------------
 initial begin
     clk = 0;
-    forever #5 clk = ~clk;   // کلاک 10ns = 100MHz
+    forever #5 clk = ~clk;  
 end
 
-// ---------------------- Test Logic ----------------------
 initial begin
   
     $display("Time\t rst load en_count par_load | W co");
@@ -43,19 +41,17 @@ initial begin
     rst = 0;
     #10;
 
-    $display("\n--- Testing LOAD ---");
+
     par_load = 3'b101;
     load = 1;
     #10;
     load = 0;
     #20;
 
-    $display("\n--- Testing COUNT ENABLE ---");
     en_count = 1;
     #80;   
 
 
-    $display("\n--- Testing LOAD again ---");
     par_load = 3'b011;
     load = 1;
     #10;
@@ -64,7 +60,6 @@ initial begin
 
     en_count=0;
     #100;
-    $display("\n--- Simulation Finished ---");
     $stop;
 end
 

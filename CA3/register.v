@@ -10,7 +10,7 @@ module register #(parameter N = 32)(
         for (i = 0; i < N; i = i + 1) begin : gen_reg
             // D00 = hold previous W[i]
             // D01 = parallel load bit
-            // D10/D11 = unused (tie 0)
+            // D10/D11 = unused 
             // A1=B1=0  -> s1 = 0
             // A0=B0=load -> s0 = load
             // -> if load==0 select D00 (hold), if load==1 select D01 (par_load)

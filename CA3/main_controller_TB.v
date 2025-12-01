@@ -33,15 +33,9 @@ module tb_hash_generator_controller;
         .done(done)
     );
 
-    // =============================
-    // Clock Generator: 10ns period
-    // =============================
     initial clk = 0;
     always #5 clk = ~clk;
 
-    // =============================
-    // Initial Stimulus
-    // =============================
     initial begin
         $dumpfile("wave.vcd");
         $dumpvars(0, tb_hash_generator_controller);
@@ -51,29 +45,22 @@ module tb_hash_generator_controller;
         co = 0;
         done_rnd = 0;
 
-        // Reset pulse
         #20;
         rst = 0;
         #10;
 
-        // =============================
-        // Test Sequence
-        // =============================
 
-        $display("=== Apply start pulse ===");
         start = 1;
         #10;
         start = 0;
 
         #50;
 
-        $display("=== Simulate done_rnd ===");
         done_rnd = 1;
         #20;
         done_rnd = 0;
 
         #40;
-        $display("=== Trigger co ===");
         co = 1;
         #10;
         co = 0;
@@ -87,7 +74,6 @@ module tb_hash_generator_controller;
         start=1;
         #100
 
-        $display("=== Test finished ===");
         $finish;
     end
 
