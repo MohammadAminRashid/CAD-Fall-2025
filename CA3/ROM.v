@@ -18,7 +18,7 @@ module ROM #(parameter BW = 32, parameter N = 64) (addrBus , outBus);
   reg [BW-1:0] ROMData [0:N-1];
 
   initial begin
-    $readmemh("constant.mem", ROMData, 0, N-1);
+    $readmemh("k.mem", ROMData, 0, N-1);
   end
 
   assign outBus = ROMData[addrBus];
