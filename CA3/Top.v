@@ -1,4 +1,4 @@
-module Top  #(parameter WORD_WIDTH = 32) (clk , rst , start , message,a0,b0,c0,d0 , hash , done);
+module Top  #(parameter WORD_WIDTH = 8) (clk , rst , start , message,a0,b0,c0,d0 , hash , done);
     input clk , rst , start;
     input [4*WORD_WIDTH-1:0] message;
     input [WORD_WIDTH-1:0] a0,b0,c0,d0;

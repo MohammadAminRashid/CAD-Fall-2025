@@ -1,4 +1,4 @@
-module hash_generator_controller(clk , rst , start , co , done_rnd , start_rnd , en ,  s , sf,load,loadf,loadm , done);
+module hash_generator_controller(clk , rst , start , co , done_rnd , start_rnd , en ,  s , sf,load,loadf,loadm , done , clear);
 input clk , rst , start , co , done_rnd;
 output  start_rnd , en ,  s,sf,load,loadf,loadm , done , clear;
 

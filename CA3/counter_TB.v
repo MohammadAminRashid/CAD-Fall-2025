@@ -50,7 +50,6 @@ initial begin
     load = 0;
     #20;
 
-    // مرحله ۴: تست counting
     $display("\n--- Testing COUNT ENABLE ---");
     en_count = 1;
     #80;   

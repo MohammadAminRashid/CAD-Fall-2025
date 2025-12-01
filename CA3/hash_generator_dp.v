@@ -1,4 +1,4 @@
-module hash_generator_dp #(parameter WORD_WIDTH = 32)(
+module hash_generator_dp #(parameter WORD_WIDTH = 8)(
     input  [4*WORD_WIDTH-1:0] message,
     input  [WORD_WIDTH-1:0] a0, b0, c0, d0, constant,
     input  clk, rst, en,
@@ -15,7 +15,7 @@ module hash_generator_dp #(parameter WORD_WIDTH = 32)(
     wire [WORD_WIDTH-1:0] mux4to1_out, mult_out;
     wire [WORD_WIDTH-1:0] parload_a, parload_b, parload_c, parload_d, par_load_f;
 
-    counter #(6) count (clk, rst, en,6'b111111,co,out_counter);
+    counter #(6) count (clk, rst ,rst, en,6'b000000,co,out_counter);
 
     muxed_register #(WORD_WIDTH) Areg(clk, rst, load , s , a0 , D, A);
     muxed_register #(WORD_WIDTH) Breg(clk, rst, load , s , b0 ,adder_out_1, B);
