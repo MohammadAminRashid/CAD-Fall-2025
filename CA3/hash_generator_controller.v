@@ -2,8 +2,8 @@ module hash_generator_controller(clk , rst , start , co , done_rnd , start_rnd ,
 input clk , rst , start , co , done_rnd;
 output  start_rnd , en ,  s,sf,load,loadf,loadm , done , clear;
 
-wire A,B,C,D,E,F,G,H;
-wire o1,o2 , x , y;
+wire A,B,C,D,E,F,G,H,Z;
+wire o1,o2 , x , y , not_start;
 
 
                 c1 c1_inst_a (
@@ -62,7 +62,6 @@ wire o1,o2 , x , y;
                 .f(y)
             );
 
-
 //  STATE A
 
 s2 S2_A (
@@ -80,6 +79,23 @@ s2 S2_A (
 );
 
 
+//  STATE Z
+
+s2 S2_Z (
+  .D00(1'b0),
+  .D01(1'b1),
+  .D10(start),
+  .D11(1'b1),
+  .A1 (Z),
+  .B1 (1'b0),
+  .A0 (A),
+  .B0 (start),
+  .clr(rst),
+  .clk(clk),
+  .out(Z)
+);
+
+
 
 
 //  STATE B
@@ -91,8 +107,8 @@ s2 S2_B (
   .D11(1'b1),
   .A1 (1'b0),
   .B1 (1'b0),
-  .A0 (A),
-  .B0 (start),
+  .A0 (Z),
+  .B0 (y),
   .clr(rst),
   .clk(clk),
   .out(B)
@@ -220,6 +236,6 @@ assign s =F;
 assign sf=E;
 assign loadm=B;
 assign done =G;
-assign clear=A;
+assign clear=Z;
 
 endmodule
