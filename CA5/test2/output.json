@@ -17,7 +17,7 @@
     "6": {
         "clk": 3,
         "resource_type": "MUL",
-        "resource_num": 2
+        "resource_num": 1
     },
     "7": {
         "clk": 1,
@@ -32,7 +32,7 @@
     "9": {
         "clk": 3,
         "resource_type": "MUL",
-        "resource_num": 1
+        "resource_num": 2
     },
     "10": {
         "clk": 4,

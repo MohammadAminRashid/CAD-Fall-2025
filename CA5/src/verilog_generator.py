@@ -54,12 +54,6 @@ class VerilogGenerator:
             return f"reg_{operand.id}"
 
         s = str(operand)
-        if 'i' in s and any(char.isdigit() for char in s):
-            match = re.search(r'i\d+', s)
-            if match:
-                clean_name = match.group()
-                self.inputs.add(clean_name)
-                return clean_name
         
         return f"reg_{s}"
 

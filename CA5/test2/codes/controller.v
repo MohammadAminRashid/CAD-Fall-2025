@@ -76,13 +76,13 @@ always @(*) begin
       next_state = S_CYCLE_3;
     end
     S_CYCLE_3: begin
-      mul2_op = 1'b0;
-      mul2_sel1 = 0;
-      mul2_sel2 = 0;
-      reg_6_en = 1'b1;
       mul1_op = 1'b0;
       mul1_sel1 = 1;
       mul1_sel2 = 1;
+      reg_6_en = 1'b1;
+      mul2_op = 1'b0;
+      mul2_sel1 = 0;
+      mul2_sel2 = 0;
       reg_9_en = 1'b1;
       next_state = S_CYCLE_4;
     end

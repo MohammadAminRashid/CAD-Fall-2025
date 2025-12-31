@@ -1,8 +1,8 @@
 module datapath(
   input clk, rst,
+  input [31:0] i2,
   input [31:0] i1,
   input [31:0] i3,
-  input [31:0] i2,
   input [3:0] alu1_sel1, alu1_sel2,
   input alu1_op,
   input [3:0] alu2_sel1, alu2_sel2,
@@ -78,7 +78,7 @@ end
 always @(*) begin
   case (mul1_sel1)
     4'd0: mul1_in1 = i1;
-    4'd1: mul1_in1 = reg_8;
+    4'd1: mul1_in1 = reg_3;
     4'd2: mul1_in1 = reg_10;
     default: mul1_in1 = 0;
   endcase
@@ -86,20 +86,20 @@ end
 always @(*) begin
   case (mul1_sel2)
     4'd0: mul1_in2 = i3;
-    4'd1: mul1_in2 = i1;
+    4'd1: mul1_in2 = reg_5;
     4'd2: mul1_in2 = i2;
     default: mul1_in2 = 0;
   endcase
 end
 always @(*) begin
   case (mul2_sel1)
-    4'd0: mul2_in1 = reg_3;
+    4'd0: mul2_in1 = reg_8;
     default: mul2_in1 = 0;
   endcase
 end
 always @(*) begin
   case (mul2_sel2)
-    4'd0: mul2_in2 = reg_5;
+    4'd0: mul2_in2 = i1;
     default: mul2_in2 = 0;
   endcase
 end
@@ -135,10 +135,10 @@ always @(posedge clk or posedge rst) begin
     if (reg_2_en) reg_2 <= alu1_out;
     if (reg_3_en) reg_3 <= alu1_out;
     if (reg_5_en) reg_5 <= mul1_out;
-    if (reg_6_en) reg_6 <= mul2_out;
+    if (reg_6_en) reg_6 <= mul1_out;
     if (reg_7_en) reg_7 <= log1_out;
     if (reg_8_en) reg_8 <= log1_out;
-    if (reg_9_en) reg_9 <= mul1_out;
+    if (reg_9_en) reg_9 <= mul2_out;
     if (result_en) result <= mul1_out;
   end
 end

@@ -682,3 +682,40 @@ run -all
 #    Time: 85 ns  Iteration: 0  Instance: /Top_tb
 # 1
 # Break in Module Top_tb at C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v line 58
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of t.v was successful.
+# Compile of Top.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.Top_tb
+# Loading work.Top
+# Loading work.controller
+# Loading work.datapath
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Time=0 clk=0 rst=1 start=0 i1=         0 i2=         0 i3=         0 result=         0 done=0
+# Time=5000 clk=1 rst=1 start=0 i1=         0 i2=         0 i3=         0 result=         0 done=0
+# Time=10000 clk=0 rst=0 start=0 i1=         0 i2=         0 i3=         0 result=         0 done=0
+# Time=15000 clk=1 rst=0 start=0 i1=         0 i2=         0 i3=         0 result=         0 done=0
+# Time=20000 clk=0 rst=0 start=1 i1=        10 i2=        20 i3=         5 result=         0 done=0
+# Time=25000 clk=1 rst=0 start=1 i1=        10 i2=        20 i3=         5 result=         0 done=0
+# Time=30000 clk=0 rst=0 start=0 i1=        10 i2=        20 i3=         5 result=         0 done=0
+# Time=35000 clk=1 rst=0 start=0 i1=        10 i2=        20 i3=         5 result=         0 done=0
+# Time=40000 clk=0 rst=0 start=0 i1=        10 i2=        20 i3=         5 result=         0 done=0
+# Time=45000 clk=1 rst=0 start=0 i1=        10 i2=        20 i3=         5 result=         0 done=0
+# Time=50000 clk=0 rst=0 start=0 i1=        10 i2=        20 i3=         5 result=         0 done=0
+# Time=55000 clk=1 rst=0 start=0 i1=        10 i2=        20 i3=         5 result=         0 done=0
+# Time=60000 clk=0 rst=0 start=0 i1=        10 i2=        20 i3=         5 result=         0 done=0
+# Time=65000 clk=1 rst=0 start=0 i1=        10 i2=        20 i3=         5 result=         0 done=0
+# Time=70000 clk=0 rst=0 start=0 i1=        10 i2=        20 i3=         5 result=         0 done=0
+# Simulation finished. Result =       4400
+# Time=75000 clk=1 rst=0 start=0 i1=        10 i2=        20 i3=         5 result=      4400 done=1
+# Time=80000 clk=0 rst=0 start=0 i1=        10 i2=        20 i3=         5 result=      4400 done=1
+# ** Note: $finish    : C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(58)
+#    Time: 85 ns  Iteration: 0  Instance: /Top_tb
+# 1
+# Break in Module Top_tb at C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v line 58
