@@ -38,6 +38,14 @@ class OperatorNode(BaseNode):
         self.op_type = op_type
         self.op = op 
         self.operands = [left_operand, right_operand]
+        
+        if isinstance(op, ast.Add): self.op_symbol = '+'
+        elif isinstance(op, ast.Sub): self.op_symbol = '-'
+        elif isinstance(op, ast.Mult): self.op_symbol = '*'
+        elif isinstance(op, ast.Div): self.op_symbol = '/'
+        elif isinstance(op, ast.BitAnd): self.op_symbol = '&'
+        elif isinstance(op, ast.BitOr): self.op_symbol = '|'
+        else: self.op_symbol = '?'
 
     def __repr__(self) -> str:
         def get_operand_name(p):
