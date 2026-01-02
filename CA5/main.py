@@ -33,12 +33,14 @@ def schedule_dfg(dfg_root, algorithm : str, config : dict, folder_path : str) ->
         scheduler = MinLatencyScheduler(dfg_root=dfg_root, numof_resources=config["Resources"])    
     scheduler.schedule()
     schedule_info = scheduler.get_scheduling_info()
+    res_count=scheduler.numof_resources
+    
 
     dot = visualize_scheduled_graph(root_id=dfg_root.id, schedule_info=schedule_info)
     dot.attr(label="", labelloc='t', fontsize='17')  
     dot.render(folder_path + "/pics/ScheduledDFG", format='png', view=False, cleanup=True)
 
-    return schedule_info
+    return schedule_info,res_count
 
 '''
     Call your VerilogGenerator class here.
@@ -47,17 +49,17 @@ def schedule_dfg(dfg_root, algorithm : str, config : dict, folder_path : str) ->
         - "{folder_path}/codes/controller.v"
 '''
 # TODO
-def generate_verilog(folder_path : str, schedule_info : list[ScheduledNodeInfo]):
+def generate_verilog(folder_path : str, schedule_info : list[ScheduledNodeInfo] , res_count):
 
-    try:
-        with open(folder_path + "/input.json", "r") as f:
-            data = json.load(f)
-            config = data["Config"]
-    except Exception as e:
-        print(f"Error loading config for Verilog Gen: {e}")
-        return
-
-    generator = VerilogGenerator(folder_path, schedule_info, config)
+    # try:
+    #     with open(folder_path + "/input.json", "r") as f:
+    #         data = json.load(f)
+    #         config = data["Config"]
+    # except Exception as e:
+    #     print(f"Error loading config for Verilog Gen: {e}")
+    #     return
+    
+    generator = VerilogGenerator(folder_path, schedule_info,res_count)
     
     codes_path = os.path.join(folder_path, "codes")
     os.makedirs(codes_path, exist_ok=True)
@@ -96,11 +98,11 @@ def run_test(folder_path : str):
 
     dfg_root = build_dfg(expression=data["Expression"], folder_path=folder_path)
 
-    schedule_info = schedule_dfg(dfg_root, algorithm=data["Algorithm"], config=data["Config"], folder_path=folder_path)
+    schedule_info,res_count = schedule_dfg(dfg_root, algorithm=data["Algorithm"], config=data["Config"], folder_path=folder_path)
 
     save_result(folder_path=folder_path, schedule_info=schedule_info)
 
-    generate_verilog(folder_path=folder_path, schedule_info=schedule_info)
+    generate_verilog(folder_path=folder_path, schedule_info=schedule_info , res_count=res_count)
 
     # i1 = 10
     # i2 = 20

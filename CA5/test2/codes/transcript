@@ -1,721 +1,136 @@
-vsim -gui work.tb_top
-# vsim -gui work.tb_top 
-# Start time: 16:59:52 on Dec 31,2025
-# Loading work.tb_top
-# Loading work.controller
-# Loading work.datapath
-# ** Error: (vsim-3063) Port 'done_next' not found in the connected module (14th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut_controller File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v Line: 27
-# ** Error (suppressible): (vsim-3389) Port 'done_next' not found in the connected module (15th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut_datapath File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v Line: 43
-# ** Error (suppressible): (vsim-3389) Port 'done' not found in the connected module (27th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut_datapath File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v Line: 43
-# Error loading design
-# End time: 16:59:52 on Dec 31,2025, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 1
-# Compile of t.v failed with 1 errors.
-# Compile of t.v was successful.
-vsim -gui work.tb_top
-# vsim -gui work.tb_top 
-# Start time: 17:01:55 on Dec 31,2025
-# Loading work.tb_top
-# Loading work.controller
-# Loading work.datapath
-# ** Error (suppressible): (vsim-3389) Port 'done' not found in the connected module (26th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut_datapath File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v Line: 43
-# Error loading design
-# End time: 17:01:55 on Dec 31,2025, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 3
-# Compile of t.v failed with 1 errors.
-# Compile of t.v was successful.
-vsim -gui work.tb_top
-# vsim -gui work.tb_top 
-# Start time: 17:02:57 on Dec 31,2025
-# Loading work.tb_top
-# Loading work.controller
-# Loading work.datapath
-# WARNING: No extended dataflow license exists
-add wave -position insertpoint  \
-sim:/tb_top/clk \
-sim:/tb_top/rst \
-sim:/tb_top/start \
-sim:/tb_top/i1 \
-sim:/tb_top/i2 \
-sim:/tb_top/i3 \
-sim:/tb_top/result \
-sim:/tb_top/op_ready \
-sim:/tb_top/alu1_sel1 \
-sim:/tb_top/alu1_sel2 \
-sim:/tb_top/alu1_op \
-sim:/tb_top/mul1_sel1 \
-sim:/tb_top/mul1_sel2 \
-sim:/tb_top/mul1_op \
-sim:/tb_top/log1_sel1 \
-sim:/tb_top/log1_sel2 \
-sim:/tb_top/log1_op \
-sim:/tb_top/done \
-sim:/tb_top/result_en \
-sim:/tb_top/reg_10_en \
-sim:/tb_top/reg_11_en \
-sim:/tb_top/reg_2_en \
-sim:/tb_top/reg_3_en \
-sim:/tb_top/reg_5_en \
-sim:/tb_top/reg_6_en \
-sim:/tb_top/reg_7_en \
-sim:/tb_top/reg_8_en \
-sim:/tb_top/reg_9_en
-run -all
-# Simulation finished. Result =       4400
-# ** Note: $stop    : C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(81)
-#    Time: 225 ns  Iteration: 0  Instance: /tb_top
-# Break in Module tb_top at C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v line 81
+# Compile of adder4.v was successful.
 # Compile of controller.v was successful.
-# Compile of datapath.v was successful.
-# Compile of t.v was successful.
-# 3 compiles, 0 failed with no errors.
-vsim -gui work.tb_top
-# End time: 17:05:25 on Dec 31,2025, Elapsed time: 0:02:28
-# Errors: 0, Warnings: 5
-# vsim -gui work.tb_top 
-# Start time: 17:05:25 on Dec 31,2025
-# Loading work.tb_top
-# Loading work.controller
-# Loading work.datapath
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uut_controller'.  Expected 33, found 24.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut_controller File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v Line: 27
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'alu2_sel1'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'alu2_sel2'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'alu2_op'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'mul2_sel1'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'mul2_sel2'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'mul2_op'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'log2_sel1'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'log2_sel2'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'log2_op'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uut_datapath'.  Expected 34, found 25.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut_datapath File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v Line: 43
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'alu2_sel1'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'alu2_sel2'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'alu2_op'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'mul2_sel1'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'mul2_sel2'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'mul2_op'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'log2_sel1'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'log2_sel2'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'log2_op'.
-# WARNING: No extended dataflow license exists
-add wave -position insertpoint  \
-sim:/tb_top/clk \
-sim:/tb_top/rst \
-sim:/tb_top/start \
-sim:/tb_top/i1 \
-sim:/tb_top/i2 \
-sim:/tb_top/i3 \
-sim:/tb_top/result \
-sim:/tb_top/op_ready \
-sim:/tb_top/alu1_sel1 \
-sim:/tb_top/alu1_sel2 \
-sim:/tb_top/alu1_op \
-sim:/tb_top/mul1_sel1 \
-sim:/tb_top/mul1_sel2 \
-sim:/tb_top/mul1_op \
-sim:/tb_top/log1_sel1 \
-sim:/tb_top/log1_sel2 \
-sim:/tb_top/log1_op \
-sim:/tb_top/done \
-sim:/tb_top/result_en \
-sim:/tb_top/reg_10_en \
-sim:/tb_top/reg_11_en \
-sim:/tb_top/reg_2_en \
-sim:/tb_top/reg_3_en \
-sim:/tb_top/reg_5_en \
-sim:/tb_top/reg_6_en \
-sim:/tb_top/reg_7_en \
-sim:/tb_top/reg_8_en \
-sim:/tb_top/reg_9_en
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uut_controller'.  Expected 33, found 24.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut_controller File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v Line: 27
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'alu2_sel1'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'alu2_sel2'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'alu2_op'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'mul2_sel1'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'mul2_sel2'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'mul2_op'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'log2_sel1'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'log2_sel2'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'log2_op'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uut_datapath'.  Expected 34, found 25.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut_datapath File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v Line: 43
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'alu2_sel1'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'alu2_sel2'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'alu2_op'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'mul2_sel1'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'mul2_sel2'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'mul2_op'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'log2_sel1'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'log2_sel2'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'log2_op'.
-run -all
-# Simulation finished. Result =          x
-# ** Note: $stop    : C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(81)
-#    Time: 225 ns  Iteration: 0  Instance: /tb_top
-# Break in Module tb_top at C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v line 81
-# Compile of controller.v was successful.
-# Compile of datapath.v was successful.
-# Compile of t.v was successful.
-# 3 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.tb_top
-# Loading work.controller
-# Loading work.datapath
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uut_controller'.  Expected 30, found 24.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut_controller File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v Line: 27
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'alu2_sel1'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'alu2_sel2'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'alu2_op'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'log2_sel1'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'log2_sel2'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'log2_op'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uut_datapath'.  Expected 31, found 25.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut_datapath File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v Line: 43
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'alu2_sel1'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'alu2_sel2'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'alu2_op'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'log2_sel1'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'log2_sel2'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'log2_op'.
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Simulation finished. Result =       4400
-# ** Note: $stop    : C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(81)
-#    Time: 225 ns  Iteration: 0  Instance: /tb_top
-# Break in Module tb_top at C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v line 81
-# Compile of controller.v was successful.
-# Compile of datapath.v was successful.
-# Compile of t.v was successful.
-# 3 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.tb_top
-# Loading work.controller
-# Loading work.datapath
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uut_controller'.  Expected 33, found 24.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut_controller File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v Line: 27
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'alu2_sel1'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'alu2_sel2'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'alu2_op'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'mul2_sel1'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'mul2_sel2'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'mul2_op'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'log2_sel1'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'log2_sel2'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'log2_op'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uut_datapath'.  Expected 34, found 25.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut_datapath File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v Line: 43
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'alu2_sel1'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'alu2_sel2'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'alu2_op'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'mul2_sel1'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'mul2_sel2'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'mul2_op'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'log2_sel1'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'log2_sel2'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'log2_op'.
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Simulation finished. Result =          x
-# ** Note: $stop    : C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(81)
-#    Time: 225 ns  Iteration: 0  Instance: /tb_top
-# Break in Module tb_top at C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v line 81
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uut_controller'.  Expected 33, found 24.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut_controller File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v Line: 27
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'alu2_sel1'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'alu2_sel2'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'alu2_op'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'mul2_sel1'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'mul2_sel2'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'mul2_op'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'log2_sel1'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'log2_sel2'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'log2_op'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uut_datapath'.  Expected 34, found 25.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut_datapath File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v Line: 43
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'alu2_sel1'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'alu2_sel2'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'alu2_op'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'mul2_sel1'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'mul2_sel2'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'mul2_op'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'log2_sel1'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'log2_sel2'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'log2_op'.
-add wave -position insertpoint  \
-sim:/tb_top/uut_controller/S_IDLE \
-sim:/tb_top/uut_controller/S_DONE \
-sim:/tb_top/uut_controller/S_CYCLE_1 \
-sim:/tb_top/uut_controller/S_CYCLE_2 \
-sim:/tb_top/uut_controller/S_CYCLE_3 \
-sim:/tb_top/uut_controller/S_CYCLE_4 \
-sim:/tb_top/uut_controller/S_CYCLE_5 \
-sim:/tb_top/uut_controller/clk \
-sim:/tb_top/uut_controller/rst \
-sim:/tb_top/uut_controller/start \
-sim:/tb_top/uut_controller/op_ready \
-sim:/tb_top/uut_controller/alu1_sel1 \
-sim:/tb_top/uut_controller/alu1_sel2 \
-sim:/tb_top/uut_controller/alu1_op \
-sim:/tb_top/uut_controller/alu2_sel1 \
-sim:/tb_top/uut_controller/alu2_sel2 \
-sim:/tb_top/uut_controller/alu2_op \
-sim:/tb_top/uut_controller/mul1_sel1 \
-sim:/tb_top/uut_controller/mul1_sel2 \
-sim:/tb_top/uut_controller/mul1_op \
-sim:/tb_top/uut_controller/mul2_sel1 \
-sim:/tb_top/uut_controller/mul2_sel2 \
-sim:/tb_top/uut_controller/mul2_op \
-sim:/tb_top/uut_controller/log1_sel1 \
-sim:/tb_top/uut_controller/log1_sel2 \
-sim:/tb_top/uut_controller/log1_op \
-sim:/tb_top/uut_controller/log2_sel1 \
-sim:/tb_top/uut_controller/log2_sel2 \
-sim:/tb_top/uut_controller/log2_op \
-sim:/tb_top/uut_controller/done \
-sim:/tb_top/uut_controller/result_en \
-sim:/tb_top/uut_controller/reg_10_en \
-sim:/tb_top/uut_controller/reg_11_en \
-sim:/tb_top/uut_controller/reg_2_en \
-sim:/tb_top/uut_controller/reg_3_en \
-sim:/tb_top/uut_controller/reg_5_en \
-sim:/tb_top/uut_controller/reg_6_en \
-sim:/tb_top/uut_controller/reg_7_en \
-sim:/tb_top/uut_controller/reg_8_en \
-sim:/tb_top/uut_controller/reg_9_en \
-sim:/tb_top/uut_controller/state \
-sim:/tb_top/uut_controller/next_state
-add wave -position insertpoint  \
-sim:/tb_top/uut_datapath/clk \
-sim:/tb_top/uut_datapath/rst \
-sim:/tb_top/uut_datapath/i3 \
-sim:/tb_top/uut_datapath/i1 \
-sim:/tb_top/uut_datapath/i2 \
-sim:/tb_top/uut_datapath/alu1_sel1 \
-sim:/tb_top/uut_datapath/alu1_sel2 \
-sim:/tb_top/uut_datapath/alu1_op \
-sim:/tb_top/uut_datapath/alu2_sel1 \
-sim:/tb_top/uut_datapath/alu2_sel2 \
-sim:/tb_top/uut_datapath/alu2_op \
-sim:/tb_top/uut_datapath/mul1_sel1 \
-sim:/tb_top/uut_datapath/mul1_sel2 \
-sim:/tb_top/uut_datapath/mul1_op \
-sim:/tb_top/uut_datapath/mul2_sel1 \
-sim:/tb_top/uut_datapath/mul2_sel2 \
-sim:/tb_top/uut_datapath/mul2_op \
-sim:/tb_top/uut_datapath/log1_sel1 \
-sim:/tb_top/uut_datapath/log1_sel2 \
-sim:/tb_top/uut_datapath/log1_op \
-sim:/tb_top/uut_datapath/log2_sel1 \
-sim:/tb_top/uut_datapath/log2_sel2 \
-sim:/tb_top/uut_datapath/log2_op \
-sim:/tb_top/uut_datapath/result_en \
-sim:/tb_top/uut_datapath/reg_10_en \
-sim:/tb_top/uut_datapath/reg_11_en \
-sim:/tb_top/uut_datapath/reg_2_en \
-sim:/tb_top/uut_datapath/reg_3_en \
-sim:/tb_top/uut_datapath/reg_5_en \
-sim:/tb_top/uut_datapath/reg_6_en \
-sim:/tb_top/uut_datapath/reg_7_en \
-sim:/tb_top/uut_datapath/reg_8_en \
-sim:/tb_top/uut_datapath/reg_9_en \
-sim:/tb_top/uut_datapath/result \
-sim:/tb_top/uut_datapath/reg_10 \
-sim:/tb_top/uut_datapath/reg_11 \
-sim:/tb_top/uut_datapath/reg_2 \
-sim:/tb_top/uut_datapath/reg_3 \
-sim:/tb_top/uut_datapath/reg_5 \
-sim:/tb_top/uut_datapath/reg_6 \
-sim:/tb_top/uut_datapath/reg_7 \
-sim:/tb_top/uut_datapath/reg_8 \
-sim:/tb_top/uut_datapath/reg_9 \
-sim:/tb_top/uut_datapath/alu1_out \
-sim:/tb_top/uut_datapath/alu1_in1 \
-sim:/tb_top/uut_datapath/alu1_in2 \
-sim:/tb_top/uut_datapath/alu2_out \
-sim:/tb_top/uut_datapath/alu2_in1 \
-sim:/tb_top/uut_datapath/alu2_in2 \
-sim:/tb_top/uut_datapath/mul1_out \
-sim:/tb_top/uut_datapath/mul1_in1 \
-sim:/tb_top/uut_datapath/mul1_in2 \
-sim:/tb_top/uut_datapath/mul2_out \
-sim:/tb_top/uut_datapath/mul2_in1 \
-sim:/tb_top/uut_datapath/mul2_in2 \
-sim:/tb_top/uut_datapath/log1_out \
-sim:/tb_top/uut_datapath/log1_in1 \
-sim:/tb_top/uut_datapath/log1_in2 \
-sim:/tb_top/uut_datapath/log2_out \
-sim:/tb_top/uut_datapath/log2_in1 \
-sim:/tb_top/uut_datapath/log2_in2
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Simulation finished. Result =          x
-# ** Note: $stop    : C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(81)
-#    Time: 225 ns  Iteration: 0  Instance: /tb_top
-# Break in Module tb_top at C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v line 81
-# Compile of controller.v was successful.
-# Compile of datapath.v was successful.
-# Compile of t.v was successful.
-# 3 compiles, 0 failed with no errors.
-add wave -position insertpoint  \
-sim:/tb_top/clk \
-sim:/tb_top/rst \
-sim:/tb_top/start \
-sim:/tb_top/i1 \
-sim:/tb_top/i2 \
-sim:/tb_top/i3 \
-sim:/tb_top/result \
-sim:/tb_top/op_ready \
-sim:/tb_top/alu1_sel1 \
-sim:/tb_top/alu1_sel2 \
-sim:/tb_top/alu1_op \
-sim:/tb_top/mul1_sel1 \
-sim:/tb_top/mul1_sel2 \
-sim:/tb_top/mul1_op \
-sim:/tb_top/log1_sel1 \
-sim:/tb_top/log1_sel2 \
-sim:/tb_top/log1_op \
-sim:/tb_top/done \
-sim:/tb_top/result_en \
-sim:/tb_top/reg_10_en \
-sim:/tb_top/reg_11_en \
-sim:/tb_top/reg_2_en \
-sim:/tb_top/reg_3_en \
-sim:/tb_top/reg_5_en \
-sim:/tb_top/reg_6_en \
-sim:/tb_top/reg_7_en \
-sim:/tb_top/reg_8_en \
-sim:/tb_top/reg_9_en
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.tb_top
-# Loading work.controller
-# Loading work.datapath
-# Warning in wave window restart: (vish-4014) No objects found matching '/tb_top/uut_controller/alu2_sel1'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/tb_top/uut_controller/alu2_sel2'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/tb_top/uut_controller/alu2_op'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/tb_top/uut_controller/mul2_sel1'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/tb_top/uut_controller/mul2_sel2'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/tb_top/uut_controller/mul2_op'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/tb_top/uut_controller/log2_sel1'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/tb_top/uut_controller/log2_sel2'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/tb_top/uut_controller/log2_op'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/tb_top/uut_datapath/alu2_sel1'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/tb_top/uut_datapath/alu2_sel2'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/tb_top/uut_datapath/alu2_op'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/tb_top/uut_datapath/mul2_sel1'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/tb_top/uut_datapath/mul2_sel2'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/tb_top/uut_datapath/mul2_op'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/tb_top/uut_datapath/log2_sel1'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/tb_top/uut_datapath/log2_sel2'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/tb_top/uut_datapath/log2_op'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/tb_top/uut_datapath/alu2_out'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/tb_top/uut_datapath/alu2_in1'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/tb_top/uut_datapath/alu2_in2'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/tb_top/uut_datapath/mul2_out'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/tb_top/uut_datapath/mul2_in1'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/tb_top/uut_datapath/mul2_in2'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/tb_top/uut_datapath/log2_out'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/tb_top/uut_datapath/log2_in1'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/tb_top/uut_datapath/log2_in2'. 
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Simulation finished. Result =       4400
-# ** Note: $stop    : C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(81)
-#    Time: 225 ns  Iteration: 0  Instance: /tb_top
-# Break in Module tb_top at C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v line 81
-# Compile of t.v was successful.
-# Compile of controller.v was successful.
-# Compile of datapath.v was successful.
-# Compile of t.v was successful.
-# 3 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.tb_top
-# Loading work.controller
-# Loading work.datapath
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uut_controller'.  Expected 27, found 24.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut_controller File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v Line: 27
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'alu2_sel1'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'alu2_sel2'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'alu2_op'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uut_datapath'.  Expected 28, found 25.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut_datapath File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v Line: 43
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'alu2_sel1'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'alu2_sel2'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'alu2_op'.
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Simulation finished. Result =       4400
-# ** Note: $stop    : C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(81)
-#    Time: 225 ns  Iteration: 0  Instance: /tb_top
-# Break in Module tb_top at C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v line 81
-# Compile of controller.v was successful.
-# Compile of datapath.v was successful.
-# Compile of t.v was successful.
-# 3 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.tb_top
-# Loading work.controller
-# Loading work.datapath
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uut_controller'.  Expected 30, found 24.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut_controller File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v Line: 27
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'alu2_sel1'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'alu2_sel2'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'alu2_op'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'mul2_sel1'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'mul2_sel2'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'mul2_op'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uut_datapath'.  Expected 31, found 25.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut_datapath File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v Line: 43
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'alu2_sel1'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'alu2_sel2'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'alu2_op'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'mul2_sel1'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'mul2_sel2'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'mul2_op'.
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Simulation finished. Result =          x
-# ** Note: $stop    : C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(81)
-#    Time: 225 ns  Iteration: 0  Instance: /tb_top
-# Break in Module tb_top at C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v line 81
-quit -sim
-# End time: 17:32:03 on Dec 31,2025, Elapsed time: 0:26:38
-# Errors: 0, Warnings: 16
-vsim -gui work.tb_top
-# vsim -gui work.tb_top 
-# Start time: 17:32:10 on Dec 31,2025
-# Loading work.tb_top
-# Loading work.controller
-# Loading work.datapath
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uut_controller'.  Expected 30, found 24.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut_controller File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v Line: 27
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'alu2_sel1'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'alu2_sel2'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'alu2_op'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'mul2_sel1'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'mul2_sel2'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(27): [TFMPC] - Missing connection for port 'mul2_op'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uut_datapath'.  Expected 31, found 25.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/uut_datapath File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v Line: 43
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'alu2_sel1'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'alu2_sel2'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'alu2_op'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'mul2_sel1'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'mul2_sel2'.
-# ** Warning: (vsim-3722) C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(43): [TFMPC] - Missing connection for port 'mul2_op'.
-# WARNING: No extended dataflow license exists
-# Compile of t.v was successful.
-vsim -gui work.tb_top
-# End time: 17:37:51 on Dec 31,2025, Elapsed time: 0:05:41
-# Errors: 0, Warnings: 16
-# vsim -gui work.tb_top 
-# Start time: 17:37:51 on Dec 31,2025
-# Loading work.tb_top
-# Loading work.controller
-# Loading work.datapath
-# WARNING: No extended dataflow license exists
-add wave -position insertpoint  \
-sim:/tb_top/clk \
-sim:/tb_top/rst \
-sim:/tb_top/start \
-sim:/tb_top/i1 \
-sim:/tb_top/i2 \
-sim:/tb_top/i3 \
-sim:/tb_top/op_ready \
-sim:/tb_top/alu1_sel1 \
-sim:/tb_top/alu1_sel2 \
-sim:/tb_top/alu2_sel1 \
-sim:/tb_top/alu2_sel2 \
-sim:/tb_top/alu1_op \
-sim:/tb_top/alu2_op \
-sim:/tb_top/mul1_sel1 \
-sim:/tb_top/mul1_sel2 \
-sim:/tb_top/mul2_sel1 \
-sim:/tb_top/mul2_sel2 \
-sim:/tb_top/mul1_op \
-sim:/tb_top/mul2_op \
-sim:/tb_top/log1_sel1 \
-sim:/tb_top/log1_sel2 \
-sim:/tb_top/log1_op \
-sim:/tb_top/done \
-sim:/tb_top/result_en \
-sim:/tb_top/reg_10_en \
-sim:/tb_top/reg_11_en \
-sim:/tb_top/reg_2_en \
-sim:/tb_top/reg_3_en \
-sim:/tb_top/reg_5_en \
-sim:/tb_top/reg_6_en \
-sim:/tb_top/reg_7_en \
-sim:/tb_top/reg_8_en \
-sim:/tb_top/reg_9_en \
-sim:/tb_top/result
-run -all
-# Final result:        925
-# ** Note: $finish    : C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(75)
-#    Time: 95 ns  Iteration: 0  Instance: /tb_top
-# 1
-# Break in Module tb_top at C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v line 75
-# Compile of t.v was successful.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.tb_top
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Final result:       4400
-# ** Note: $finish    : C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(75)
-#    Time: 95 ns  Iteration: 0  Instance: /tb_top
-# 1
-# Break in Module tb_top at C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v line 75
-quit -sim
-# End time: 17:50:50 on Dec 31,2025, Elapsed time: 0:12:59
-# Errors: 0, Warnings: 1
-# Compile of controller.v was successful.
-# Compile of datapath.v was successful.
-# Compile of t.v was successful.
-# 3 compiles, 0 failed with no errors.
-# Compile of controller.v was successful.
-# Compile of datapath.v was successful.
-# Compile of t.v was successful.
-# Compile of Top.v was successful.
-# 4 compiles, 0 failed with no errors.
-# Compile of controller.v was successful.
-# Compile of datapath.v was successful.
-# Compile of t.v was successful.
-# Compile of Top.v was successful.
-# 4 compiles, 0 failed with no errors.
-vsim -gui work.Top_tb
-# vsim -gui work.Top_tb 
-# Start time: 17:52:02 on Dec 31,2025
+# Compile of data_path.v was successful.
+# Compile of decoder.v was successful.
+# Compile of G.v was successful.
+# Compile of LOD.v was successful.
+# Compile of mult.v was successful.
+# Compile of mux2to1.v was successful.
+# Compile of mux4to1.v was successful.
+# Compile of register.v was successful.
+# Compile of TOP.v was successful.
+# Compile of TOP_TB.v was successful.
+# 12 compiles, 0 failed with no errors.
+vsim work.Top_tb
+# vsim work.Top_tb 
+# Start time: 11:08:36 on Jan 01,2026
 # Loading work.Top_tb
 # Loading work.Top
 # Loading work.controller
 # Loading work.datapath
-# WARNING: No extended dataflow license exists
-add wave -position insertpoint  \
-sim:/Top_tb/clk \
-sim:/Top_tb/rst \
-sim:/Top_tb/start \
-sim:/Top_tb/i1 \
-sim:/Top_tb/i2 \
-sim:/Top_tb/i3 \
-sim:/Top_tb/result \
-sim:/Top_tb/done
-run -all
-# Time=0 clk=0 rst=1 start=0 i1=         0 i2=         0 i3=         0 result=         0 done=0
-# Time=5000 clk=1 rst=1 start=0 i1=         0 i2=         0 i3=         0 result=         0 done=0
-# Time=10000 clk=0 rst=0 start=0 i1=         0 i2=         0 i3=         0 result=         0 done=0
-# Time=15000 clk=1 rst=0 start=0 i1=         0 i2=         0 i3=         0 result=         0 done=0
-# Time=20000 clk=0 rst=0 start=1 i1=         5 i2=        10 i3=         3 result=         0 done=0
-# Time=25000 clk=1 rst=0 start=1 i1=         5 i2=        10 i3=         3 result=         0 done=0
-# Time=30000 clk=0 rst=0 start=0 i1=         5 i2=        10 i3=         3 result=         0 done=0
-# Time=35000 clk=1 rst=0 start=0 i1=         5 i2=        10 i3=         3 result=         0 done=0
-# Time=40000 clk=0 rst=0 start=0 i1=         5 i2=        10 i3=         3 result=         0 done=0
-# Time=45000 clk=1 rst=0 start=0 i1=         5 i2=        10 i3=         3 result=         0 done=0
-# Time=50000 clk=0 rst=0 start=0 i1=         5 i2=        10 i3=         3 result=         0 done=0
-# Time=55000 clk=1 rst=0 start=0 i1=         5 i2=        10 i3=         3 result=         0 done=0
-# Time=60000 clk=0 rst=0 start=0 i1=         5 i2=        10 i3=         3 result=         0 done=0
-# Time=65000 clk=1 rst=0 start=0 i1=         5 i2=        10 i3=         3 result=         0 done=0
-# Time=70000 clk=0 rst=0 start=0 i1=         5 i2=        10 i3=         3 result=         0 done=0
-# Simulation finished. Result =        550
-# Time=75000 clk=1 rst=0 start=0 i1=         5 i2=        10 i3=         3 result=       550 done=1
-# Time=80000 clk=0 rst=0 start=0 i1=         5 i2=        10 i3=         3 result=       550 done=1
-# ** Note: $finish    : C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(58)
-#    Time: 85 ns  Iteration: 0  Instance: /Top_tb
-# 1
-# Break in Module Top_tb at C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v line 58
-# Compile of t.v was successful.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.Top_tb
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Time=0 clk=0 rst=1 start=0 i1=         0 i2=         0 i3=         0 result=         0 done=0
-# Time=5000 clk=1 rst=1 start=0 i1=         0 i2=         0 i3=         0 result=         0 done=0
-# Time=10000 clk=0 rst=0 start=0 i1=         0 i2=         0 i3=         0 result=         0 done=0
-# Time=15000 clk=1 rst=0 start=0 i1=         0 i2=         0 i3=         0 result=         0 done=0
-# Time=20000 clk=0 rst=0 start=1 i1=        10 i2=        20 i3=         5 result=         0 done=0
-# Time=25000 clk=1 rst=0 start=1 i1=        10 i2=        20 i3=         5 result=         0 done=0
-# Time=30000 clk=0 rst=0 start=0 i1=        10 i2=        20 i3=         5 result=         0 done=0
-# Time=35000 clk=1 rst=0 start=0 i1=        10 i2=        20 i3=         5 result=         0 done=0
-# Time=40000 clk=0 rst=0 start=0 i1=        10 i2=        20 i3=         5 result=         0 done=0
-# Time=45000 clk=1 rst=0 start=0 i1=        10 i2=        20 i3=         5 result=         0 done=0
-# Time=50000 clk=0 rst=0 start=0 i1=        10 i2=        20 i3=         5 result=         0 done=0
-# Time=55000 clk=1 rst=0 start=0 i1=        10 i2=        20 i3=         5 result=         0 done=0
-# Time=60000 clk=0 rst=0 start=0 i1=        10 i2=        20 i3=         5 result=         0 done=0
-# Time=65000 clk=1 rst=0 start=0 i1=        10 i2=        20 i3=         5 result=         0 done=0
-# Time=70000 clk=0 rst=0 start=0 i1=        10 i2=        20 i3=         5 result=         0 done=0
-# Simulation finished. Result =       4400
-# Time=75000 clk=1 rst=0 start=0 i1=        10 i2=        20 i3=         5 result=      4400 done=1
-# Time=80000 clk=0 rst=0 start=0 i1=        10 i2=        20 i3=         5 result=      4400 done=1
-# ** Note: $finish    : C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(58)
-#    Time: 85 ns  Iteration: 0  Instance: /Top_tb
-# 1
-# Break in Module Top_tb at C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v line 58
-# Compile of controller.v was successful.
-# Compile of datapath.v was successful.
-# Compile of t.v was successful.
-# Compile of Top.v was successful.
-# 4 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.Top_tb
-# Loading work.Top
+# ** Error (suppressible): (vsim-3389) Port 'op_ready' not found in the connected module (4th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
+# ** Error (suppressible): (vsim-3389) Port 'alu1_sel1' not found in the connected module (5th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
+# ** Error (suppressible): (vsim-3389) Port 'alu1_sel2' not found in the connected module (6th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
+# ** Error (suppressible): (vsim-3389) Port 'alu1_op' not found in the connected module (7th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
+# ** Error (suppressible): (vsim-3389) Port 'mul1_sel1' not found in the connected module (8th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
+# ** Error (suppressible): (vsim-3389) Port 'mul1_sel2' not found in the connected module (9th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
+# ** Error (suppressible): (vsim-3389) Port 'mul1_op' not found in the connected module (10th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
+# ** Error (suppressible): (vsim-3389) Port 'log1_sel1' not found in the connected module (11th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
+# ** Error (suppressible): (vsim-3389) Port 'log1_sel2' not found in the connected module (12th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
+# ** Error (suppressible): (vsim-3389) Port 'log1_op' not found in the connected module (13th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
+# ** Error (suppressible): (vsim-3389) Port 'done' not found in the connected module (14th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
+# ** Error (suppressible): (vsim-3389) Port 'result_en' not found in the connected module (15th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
+# ** Error (suppressible): (vsim-3389) Port 'reg_10_en' not found in the connected module (16th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
+# ** Error (suppressible): (vsim-3389) Port 'reg_11_en' not found in the connected module (17th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
+# ** Error (suppressible): (vsim-3389) Port 'reg_2_en' not found in the connected module (18th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
+# ** Error (suppressible): (vsim-3389) Port 'reg_3_en' not found in the connected module (19th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
+# ** Error (suppressible): (vsim-3389) Port 'reg_5_en' not found in the connected module (20th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
+# ** Error (suppressible): (vsim-3389) Port 'reg_6_en' not found in the connected module (21st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
+# ** Error (suppressible): (vsim-3389) Port 'reg_7_en' not found in the connected module (22nd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
+# ** Error (suppressible): (vsim-3389) Port 'reg_8_en' not found in the connected module (23rd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
+# ** Error (suppressible): (vsim-3389) Port 'reg_9_en' not found in the connected module (24th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
+# Error loading design
+# End time: 11:08:36 on Jan 01,2026, Elapsed time: 0:00:00
+# Errors: 21, Warnings: 5
+vsim work.Top_TB
+# vsim work.Top_TB 
+# Start time: 11:08:44 on Jan 01,2026
+# Loading work.Top_TB
+# Loading work.TOP
+# Loading work.data_path
+# Loading work.register
+# Loading work.LOD
+# Loading work.mult
+# Loading work.mux2to1
+# Loading work.adder4
+# Loading work.mux4to1
+# Loading work.G
+# Loading work.decoder
 # Loading work.controller
-# Loading work.datapath
+# WARNING: No extended dataflow license exists
+# Trace back: Error QStructure::sort: invalid command name ""
+#   <6:C:/mtitcl/vsim/qstructure.tc_:2478: ::QStructure::sort .main_pane.structure 2 ascending
+#   <5:eval:1: ::QStructure::structsort .main_pane.structure 2 ascending
+#   <4:eval:1: ::namespace inscope ::QStructure {structsort .main_pane.structure} 2 ascending
+#   >3:proc:26: ::.main_pane.structure.interior.cs.body.struct sort 2 ascending
+#   >2:proc:10: ::.main_pane.structure.interior.cs.body.struct _initializeSortColumn
+#   <1:eval:1: ::namespace inscope ::vsimwidgets::Hierarchy {::.main_pane.structure.interior.cs.body.struct _initializeSortColumn}
+add wave -position insertpoint  \
+sim:/Top_TB/clk \
+sim:/Top_TB/rst \
+sim:/Top_TB/start \
+sim:/Top_TB/A0 \
+sim:/Top_TB/W0 \
+sim:/Top_TB/A1 \
+sim:/Top_TB/W1 \
+sim:/Top_TB/ready \
+sim:/Top_TB/acc_out \
+sim:/Top_TB/test_vectors \
+sim:/Top_TB/expected_out \
+sim:/Top_TB/i \
+sim:/Top_TB/errors
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Asus  Hostname: LAPTOP-F3FQMCQ9  ProcessID: 26788
+#           Attempting to use alternate WLF file "./wlftf363a4".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftf363a4
 run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Time=0 clk=0 rst=1 start=0 i1=         0 i2=         0 i3=         0 result=         0 done=0
-# Time=5000 clk=1 rst=1 start=0 i1=         0 i2=         0 i3=         0 result=         0 done=0
-# Time=10000 clk=0 rst=0 start=0 i1=         0 i2=         0 i3=         0 result=         0 done=0
-# Time=15000 clk=1 rst=0 start=0 i1=         0 i2=         0 i3=         0 result=         0 done=0
-# Time=20000 clk=0 rst=0 start=1 i1=        10 i2=        20 i3=         5 result=         0 done=0
-# Time=25000 clk=1 rst=0 start=1 i1=        10 i2=        20 i3=         5 result=         0 done=0
-# Time=30000 clk=0 rst=0 start=0 i1=        10 i2=        20 i3=         5 result=         0 done=0
-# Time=35000 clk=1 rst=0 start=0 i1=        10 i2=        20 i3=         5 result=         0 done=0
-# Time=40000 clk=0 rst=0 start=0 i1=        10 i2=        20 i3=         5 result=         0 done=0
-# Time=45000 clk=1 rst=0 start=0 i1=        10 i2=        20 i3=         5 result=         0 done=0
-# Time=50000 clk=0 rst=0 start=0 i1=        10 i2=        20 i3=         5 result=         0 done=0
-# Time=55000 clk=1 rst=0 start=0 i1=        10 i2=        20 i3=         5 result=         0 done=0
-# Time=60000 clk=0 rst=0 start=0 i1=        10 i2=        20 i3=         5 result=         0 done=0
-# Time=65000 clk=1 rst=0 start=0 i1=        10 i2=        20 i3=         5 result=         0 done=0
-# Time=70000 clk=0 rst=0 start=0 i1=        10 i2=        20 i3=         5 result=         0 done=0
-# Simulation finished. Result =       4400
-# Time=75000 clk=1 rst=0 start=0 i1=        10 i2=        20 i3=         5 result=      4400 done=1
-# Time=80000 clk=0 rst=0 start=0 i1=        10 i2=        20 i3=         5 result=      4400 done=1
-# ** Note: $finish    : C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v(58)
-#    Time: 85 ns  Iteration: 0  Instance: /Top_tb
+# Test 0 Passed. Output: 18b6
+# Test 1 Passed. Output: 17f4
+# Test 2 Passed. Output: 12b4
+# Test 3 Passed. Output: 087f
+# Test 4 Passed. Output: 122f
+# Test 5 Passed. Output: 4be1
+# Test 6 Passed. Output: 58c7
+# Test 7 Passed. Output: 0000
+# Test 8 Passed. Output: fe0b
+# Test 9 Passed. Output: ffff
+# Test 10 Passed. Output: 8000
+# Test 11 Passed. Output: 7fff
+# Test 12 Passed. Output: 8001
+# Test 13 Passed. Output: 70e4
+# Test 14 Passed. Output: 0001
+# Test 15 Passed. Output: 0000
+# Test 16 Passed. Output: ae38
+# Test 17 Passed. Output: 4d76
+# Test 18 Passed. Output: ff00
+# Test 19 Passed. Output: c738
+# Test 20 Passed. Output: 09f6
+# -----------------------------------------
+# ALL 21 TESTS PASSED SUCCESSFULLY!
+# -----------------------------------------
+# ** Note: $finish    : C:/Users/Asus/Desktop/SEMESTER5/CAD/New folder/TOP_TB.v(154)
+#    Time: 3920 ns  Iteration: 0  Instance: /Top_TB
 # 1
-# Break in Module Top_tb at C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/t.v line 58
+# Break in Module Top_TB at C:/Users/Asus/Desktop/SEMESTER5/CAD/New folder/TOP_TB.v line 154

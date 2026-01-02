@@ -1,10 +1,10 @@
 import re
 
 class VerilogGenerator:
-    def __init__(self, folder_path, schedule_info, config):
+    def __init__(self, folder_path, schedule_info, res_count):
         self.folder_path=folder_path
         self.schedule_info=schedule_info
-        self.res_count=config['Resources'].items()
+        self.res_count=res_count.items()
         self.inputs=set()
         self.max_time=0
         self._calculate_max_time()
