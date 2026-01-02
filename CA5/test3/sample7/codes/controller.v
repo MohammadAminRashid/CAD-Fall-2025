@@ -1,0 +1,85 @@
+module controller(
+  input clk, rst, start,
+  output reg op_ready,
+  output reg done, result_en,
+  output reg reg_10_en, reg_13_en, reg_14_en, reg_2_en, reg_4_en, reg_6_en, reg_9_en );
+
+reg [3:0] state, next_state;
+localparam S_IDLE = 0, S_DONE = 6;
+localparam S_CYCLE_1 = 1;
+localparam S_CYCLE_2 = 2;
+localparam S_CYCLE_3 = 3;
+localparam S_CYCLE_4 = 4;
+localparam S_CYCLE_5 = 5;
+
+always @(posedge clk or posedge rst) begin
+  if (rst) state <= S_IDLE;
+  else state <= next_state;
+end
+
+always @(*) begin
+  op_ready = 0; next_state = state; result_en = 0; done = 0;
+  reg_2_en = 0;
+  reg_4_en = 0;
+  reg_6_en = 0;
+  reg_9_en = 0;
+  reg_10_en = 0;
+  reg_13_en = 0;
+  reg_14_en = 0;
+
+  case (state)
+    S_IDLE: begin
+      op_ready = 1'b1;
+      if (start) next_state = S_CYCLE_1;
+    end
+    S_CYCLE_1: begin
+      mul1_op = 1'b0;
+      mul1_sel1 = 0;
+      mul1_sel2 = 0;
+      reg_2_en = 1'b1;
+      next_state = S_CYCLE_2;
+    end
+    S_CYCLE_2: begin
+      mul1_op = 1'b0;
+      mul1_sel1 = 1;
+      mul1_sel2 = 1;
+      reg_4_en = 1'b1;
+      next_state = S_CYCLE_3;
+    end
+    S_CYCLE_3: begin
+      mul1_op = 1'b0;
+      mul1_sel1 = 2;
+      mul1_sel2 = 2;
+      reg_6_en = 1'b1;
+      log1_op = 1'b0;
+      log1_sel1 = 0;
+      log1_sel2 = 0;
+      reg_9_en = 1'b1;
+      next_state = S_CYCLE_4;
+    end
+    S_CYCLE_4: begin
+      log1_op = 1'b1;
+      log1_sel1 = 1;
+      log1_sel2 = 1;
+      reg_10_en = 1'b1;
+      log2_op = 1'b0;
+      log2_sel1 = 0;
+      log2_sel2 = 0;
+      reg_13_en = 1'b1;
+      next_state = S_CYCLE_5;
+    end
+    S_CYCLE_5: begin
+      log1_op = 1'b1;
+      log1_sel1 = 2;
+      log1_sel2 = 2;
+      reg_14_en = 1'b1;
+      result_en = 1'b1;
+      next_state = S_DONE;
+    end
+    S_DONE: begin
+      done = 1'b1;
+      next_state = S_IDLE;
+    end
+  endcase
+end
+endmodule
