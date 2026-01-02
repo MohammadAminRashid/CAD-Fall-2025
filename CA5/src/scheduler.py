@@ -105,7 +105,7 @@ class MinLatencyScheduler(ListScheduler):
     # TODO
     def select_from_frontier(self, frontier : List[OperatorNode]) -> List[OperatorNode]:
 
-        frontier.sort(key=lambda x: x.depth, reverse=True)
+        frontier.sort(key=lambda x: x.depth, reverse=True) 
         
         selected = []
         resources_avail = self.numof_resources.copy()
@@ -141,7 +141,8 @@ class MinLatencyScheduler(ListScheduler):
             current_time += 1
 
 
-    
+
+
 
     
 class MinResourceScheduler(ListScheduler):
