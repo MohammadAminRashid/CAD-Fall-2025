@@ -1,0 +1,45 @@
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of t.v was successful.
+# Compile of Top.v was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.Top_TB
+# vsim -gui work.Top_TB 
+# Start time: 17:07:22 on Jan 02,2026
+# Loading work.Top_TB
+# Loading work.Top
+# Loading work.controller
+# Loading work.datapath
+# WARNING: No extended dataflow license exists
+# Trace back: Error QStructure::sort: invalid command name ""
+#   <6:C:/mtitcl/vsim/qstructure.tc_:2478: ::QStructure::sort .main_pane.structure 2 ascending
+#   <5:eval:1: ::QStructure::structsort .main_pane.structure 2 ascending
+#   <4:eval:1: ::namespace inscope ::QStructure {structsort .main_pane.structure} 2 ascending
+#   >3:proc:26: ::.main_pane.structure.interior.cs.body.struct sort 2 ascending
+#   >2:proc:10: ::.main_pane.structure.interior.cs.body.struct _initializeSortColumn
+#   <1:eval:1: ::namespace inscope ::vsimwidgets::Hierarchy {::.main_pane.structure.interior.cs.body.struct _initializeSortColumn}
+add wave -position insertpoint  \
+sim:/Top_TB/clk \
+sim:/Top_TB/rst \
+sim:/Top_TB/start \
+sim:/Top_TB/i1 \
+sim:/Top_TB/i2 \
+sim:/Top_TB/i3 \
+sim:/Top_TB/i4 \
+sim:/Top_TB/i5 \
+sim:/Top_TB/i6 \
+sim:/Top_TB/i7 \
+sim:/Top_TB/i8 \
+sim:/Top_TB/result \
+sim:/Top_TB/done
+run -all
+# ----- Simulation Start -----
+# DONE signal arrived.
+# RESULT =         60 (0x0000003c)
+# ----- Simulation Finished -----
+# ** Note: $stop    : C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test3/sample6/codes/t.v(73)
+#    Time: 135 ns  Iteration: 0  Instance: /Top_TB
+# Break in Module Top_TB at C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test3/sample6/codes/t.v line 73
+quit -sim
+# End time: 17:12:28 on Jan 02,2026, Elapsed time: 0:05:06
+# Errors: 0, Warnings: 3

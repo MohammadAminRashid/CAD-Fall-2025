@@ -1,0 +1,33 @@
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of t.v was successful.
+# Compile of Top.v was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.Top_TB
+# vsim -gui work.Top_TB 
+# Start time: 17:25:41 on Jan 02,2026
+# Loading work.Top_TB
+# Loading work.Top
+# Loading work.controller
+# Loading work.datapath
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/Top_TB/clk \
+sim:/Top_TB/rst \
+sim:/Top_TB/start \
+sim:/Top_TB/i1 \
+sim:/Top_TB/i2 \
+sim:/Top_TB/i3 \
+sim:/Top_TB/i4 \
+sim:/Top_TB/i5 \
+sim:/Top_TB/i6 \
+sim:/Top_TB/result \
+sim:/Top_TB/done
+run -all
+# ----- Simulation Start -----
+# DONE signal arrived.
+# RESULT =        243 (0x000000f3)
+# ----- Simulation Finished -----
+# ** Note: $stop    : C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test3/sample10/codes/t.v(70)
+#    Time: 165 ns  Iteration: 0  Instance: /Top_TB
+# Break in Module Top_TB at C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test3/sample10/codes/t.v line 70

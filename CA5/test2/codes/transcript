@@ -1,136 +1,46 @@
-# Compile of adder4.v was successful.
 # Compile of controller.v was successful.
-# Compile of data_path.v was successful.
-# Compile of decoder.v was successful.
-# Compile of G.v was successful.
-# Compile of LOD.v was successful.
-# Compile of mult.v was successful.
-# Compile of mux2to1.v was successful.
-# Compile of mux4to1.v was successful.
-# Compile of register.v was successful.
-# Compile of TOP.v was successful.
-# Compile of TOP_TB.v was successful.
-# 12 compiles, 0 failed with no errors.
-vsim work.Top_tb
-# vsim work.Top_tb 
-# Start time: 11:08:36 on Jan 01,2026
-# Loading work.Top_tb
+# Compile of datapath.v was successful.
+# Compile of Top.v was successful.
+# 3 compiles, 0 failed with no errors.
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of Top.v was successful.
+# Compile of t.v was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.Top_TB
+# vsim -gui work.Top_TB 
+# Start time: 16:58:31 on Jan 02,2026
+# Loading work.Top_TB
 # Loading work.Top
 # Loading work.controller
 # Loading work.datapath
-# ** Error (suppressible): (vsim-3389) Port 'op_ready' not found in the connected module (4th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
-# ** Error (suppressible): (vsim-3389) Port 'alu1_sel1' not found in the connected module (5th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
-# ** Error (suppressible): (vsim-3389) Port 'alu1_sel2' not found in the connected module (6th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
-# ** Error (suppressible): (vsim-3389) Port 'alu1_op' not found in the connected module (7th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
-# ** Error (suppressible): (vsim-3389) Port 'mul1_sel1' not found in the connected module (8th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
-# ** Error (suppressible): (vsim-3389) Port 'mul1_sel2' not found in the connected module (9th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
-# ** Error (suppressible): (vsim-3389) Port 'mul1_op' not found in the connected module (10th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
-# ** Error (suppressible): (vsim-3389) Port 'log1_sel1' not found in the connected module (11th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
-# ** Error (suppressible): (vsim-3389) Port 'log1_sel2' not found in the connected module (12th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
-# ** Error (suppressible): (vsim-3389) Port 'log1_op' not found in the connected module (13th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
-# ** Error (suppressible): (vsim-3389) Port 'done' not found in the connected module (14th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
-# ** Error (suppressible): (vsim-3389) Port 'result_en' not found in the connected module (15th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
-# ** Error (suppressible): (vsim-3389) Port 'reg_10_en' not found in the connected module (16th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
-# ** Error (suppressible): (vsim-3389) Port 'reg_11_en' not found in the connected module (17th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
-# ** Error (suppressible): (vsim-3389) Port 'reg_2_en' not found in the connected module (18th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
-# ** Error (suppressible): (vsim-3389) Port 'reg_3_en' not found in the connected module (19th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
-# ** Error (suppressible): (vsim-3389) Port 'reg_5_en' not found in the connected module (20th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
-# ** Error (suppressible): (vsim-3389) Port 'reg_6_en' not found in the connected module (21st connection).
-#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
-# ** Error (suppressible): (vsim-3389) Port 'reg_7_en' not found in the connected module (22nd connection).
-#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
-# ** Error (suppressible): (vsim-3389) Port 'reg_8_en' not found in the connected module (23rd connection).
-#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
-# ** Error (suppressible): (vsim-3389) Port 'reg_9_en' not found in the connected module (24th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /Top_tb/uut/ctrl_inst File: C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test2/codes/Top.v Line: 30
-# Error loading design
-# End time: 11:08:36 on Jan 01,2026, Elapsed time: 0:00:00
-# Errors: 21, Warnings: 5
-vsim work.Top_TB
-# vsim work.Top_TB 
-# Start time: 11:08:44 on Jan 01,2026
-# Loading work.Top_TB
-# Loading work.TOP
-# Loading work.data_path
-# Loading work.register
-# Loading work.LOD
-# Loading work.mult
-# Loading work.mux2to1
-# Loading work.adder4
-# Loading work.mux4to1
-# Loading work.G
-# Loading work.decoder
-# Loading work.controller
 # WARNING: No extended dataflow license exists
-# Trace back: Error QStructure::sort: invalid command name ""
-#   <6:C:/mtitcl/vsim/qstructure.tc_:2478: ::QStructure::sort .main_pane.structure 2 ascending
-#   <5:eval:1: ::QStructure::structsort .main_pane.structure 2 ascending
-#   <4:eval:1: ::namespace inscope ::QStructure {structsort .main_pane.structure} 2 ascending
-#   >3:proc:26: ::.main_pane.structure.interior.cs.body.struct sort 2 ascending
-#   >2:proc:10: ::.main_pane.structure.interior.cs.body.struct _initializeSortColumn
-#   <1:eval:1: ::namespace inscope ::vsimwidgets::Hierarchy {::.main_pane.structure.interior.cs.body.struct _initializeSortColumn}
 add wave -position insertpoint  \
 sim:/Top_TB/clk \
 sim:/Top_TB/rst \
 sim:/Top_TB/start \
-sim:/Top_TB/A0 \
-sim:/Top_TB/W0 \
-sim:/Top_TB/A1 \
-sim:/Top_TB/W1 \
-sim:/Top_TB/ready \
-sim:/Top_TB/acc_out \
-sim:/Top_TB/test_vectors \
-sim:/Top_TB/expected_out \
-sim:/Top_TB/i \
-sim:/Top_TB/errors
+sim:/Top_TB/i1 \
+sim:/Top_TB/i2 \
+sim:/Top_TB/i3 \
+sim:/Top_TB/i4 \
+sim:/Top_TB/i5 \
+sim:/Top_TB/i6 \
+sim:/Top_TB/i7 \
+sim:/Top_TB/result \
+sim:/Top_TB/done
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: Asus  Hostname: LAPTOP-F3FQMCQ9  ProcessID: 26788
-#           Attempting to use alternate WLF file "./wlftf363a4".
+#           Attempting to use alternate WLF file "./wlftm8yyf3".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftf363a4
+#           Using alternate file: ./wlftm8yyf3
 run -all
-# Test 0 Passed. Output: 18b6
-# Test 1 Passed. Output: 17f4
-# Test 2 Passed. Output: 12b4
-# Test 3 Passed. Output: 087f
-# Test 4 Passed. Output: 122f
-# Test 5 Passed. Output: 4be1
-# Test 6 Passed. Output: 58c7
-# Test 7 Passed. Output: 0000
-# Test 8 Passed. Output: fe0b
-# Test 9 Passed. Output: ffff
-# Test 10 Passed. Output: 8000
-# Test 11 Passed. Output: 7fff
-# Test 12 Passed. Output: 8001
-# Test 13 Passed. Output: 70e4
-# Test 14 Passed. Output: 0001
-# Test 15 Passed. Output: 0000
-# Test 16 Passed. Output: ae38
-# Test 17 Passed. Output: 4d76
-# Test 18 Passed. Output: ff00
-# Test 19 Passed. Output: c738
-# Test 20 Passed. Output: 09f6
-# -----------------------------------------
-# ALL 21 TESTS PASSED SUCCESSFULLY!
-# -----------------------------------------
-# ** Note: $finish    : C:/Users/Asus/Desktop/SEMESTER5/CAD/New folder/TOP_TB.v(154)
-#    Time: 3920 ns  Iteration: 0  Instance: /Top_TB
-# 1
-# Break in Module Top_TB at C:/Users/Asus/Desktop/SEMESTER5/CAD/New folder/TOP_TB.v line 154
+# ----- Simulation Start -----
+# DONE signal arrived.
+# RESULT =      12946 (0x00003292)
+# ----- Simulation Finished -----
+# ** Note: $stop    : C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test3/sample4/codes/t.v(72)
+#    Time: 165 ns  Iteration: 0  Instance: /Top_TB
+# Break in Module Top_TB at C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/test3/sample4/codes/t.v line 72
+quit -sim
+# End time: 17:05:43 on Jan 02,2026, Elapsed time: 0:07:12
+# Errors: 0, Warnings: 7

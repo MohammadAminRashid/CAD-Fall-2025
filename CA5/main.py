@@ -51,14 +51,6 @@ def schedule_dfg(dfg_root, algorithm : str, config : dict, folder_path : str) ->
 # TODO
 def generate_verilog(folder_path : str, schedule_info : list[ScheduledNodeInfo] , res_count):
 
-    # try:
-    #     with open(folder_path + "/input.json", "r") as f:
-    #         data = json.load(f)
-    #         config = data["Config"]
-    # except Exception as e:
-    #     print(f"Error loading config for Verilog Gen: {e}")
-    #     return
-    
     generator = VerilogGenerator(folder_path, schedule_info,res_count)
     
     codes_path = os.path.join(folder_path, "codes")
@@ -103,17 +95,6 @@ def run_test(folder_path : str):
     save_result(folder_path=folder_path, schedule_info=schedule_info)
 
     generate_verilog(folder_path=folder_path, schedule_info=schedule_info , res_count=res_count)
-
-    # i1 = 10
-    # i2 = 20
-    # i3 = 5
-
-    # part1 = (i1 + i2 + i1) * (i1 // i3)
-    # part2 = ((i2 & i3) | i1) * i1
-    # sum_parts = (part1 + part2) & 0xFFFFFFFF  
-    # result = (sum_parts * i2) & 0xFFFFFFFF  
-
-    # print("Result =", result)
 
 
 def main():
