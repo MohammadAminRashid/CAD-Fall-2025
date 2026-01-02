@@ -61,10 +61,6 @@ always @(*) begin
       log1_sel1 = 0;
       log1_sel2 = 0;
       reg_5_en = 1'b1;
-      mul1_op = 1'b1;
-      mul1_sel1 = 1;
-      mul1_sel2 = 1;
-      reg_8_en = 1'b1;
       log2_op = 1'b0;
       log2_sel1 = 0;
       log2_sel2 = 0;
@@ -80,6 +76,10 @@ always @(*) begin
       alu2_sel1 = 0;
       alu2_sel2 = 0;
       reg_6_en = 1'b1;
+      mul1_op = 1'b1;
+      mul1_sel1 = 1;
+      mul1_sel2 = 1;
+      reg_8_en = 1'b1;
       alu3_op = 1'b1;
       alu3_sel1 = 0;
       alu3_sel2 = 0;

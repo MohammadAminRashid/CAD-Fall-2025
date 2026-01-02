@@ -150,6 +150,7 @@ class MinResourceScheduler(ListScheduler):
         super().__init__(dfg_root=dfg_root, numof_reources=numof_resources)
         self.max_time = max_time
         self.latest_time = self.find_latest_times()
+        self.numof_resources = {op: 0 for op in OP_TYPES}
 
 
     '''
