@@ -1,11 +1,19 @@
 module datapath(
   input clk, rst,
-  input [31:0] i1,
   input [31:0] i5,
-  input [31:0] i2,
-  input [31:0] i4,
-  input [31:0] i3,
   input [31:0] i6,
+  input [31:0] i4,
+  input [31:0] i1,
+  input [31:0] i3,
+  input [31:0] i2,
+  input [3:0] alu1_sel1, alu1_sel2,
+  input alu1_op,
+  input [3:0] alu2_sel1, alu2_sel2,
+  input alu2_op,
+  input [3:0] mul1_sel1, mul1_sel2,
+  input mul1_op,
+  input [3:0] log1_sel1, log1_sel2,
+  input log1_op,
   input result_en,
   input reg_10_en,
   input reg_2_en,
@@ -20,6 +28,14 @@ reg [31:0] reg_7;
 reg [31:0] reg_8;
 
 
+wire [31:0] alu1_out;
+reg [31:0] alu1_in1, alu1_in2;
+wire [31:0] alu2_out;
+reg [31:0] alu2_in1, alu2_in2;
+wire [31:0] mul1_out;
+reg [31:0] mul1_in1, mul1_in2;
+wire [31:0] log1_out;
+reg [31:0] log1_in1, log1_in2;
 always @(*) begin
   case (alu1_sel1)
     4'd0: alu1_in1 = reg_2;
@@ -72,6 +88,14 @@ always @(*) begin
 end
 
 
+// ALU Unit 1
+assign alu1_out = (alu1_op == 1'b0) ? (alu1_in1 + alu1_in2) : (alu1_in1 - alu1_in2);
+// ALU Unit 2
+assign alu2_out = (alu2_op == 1'b0) ? (alu2_in1 + alu2_in2) : (alu2_in1 - alu2_in2);
+// MUL Unit 1
+assign mul1_out = (mul1_op == 1'b0) ? (mul1_in1 * mul1_in2) : (mul1_in1 / mul1_in2);
+// LOG Unit 1
+assign log1_out = (log1_op == 1'b0) ? (log1_in1 & log1_in2) : (log1_in1 | log1_in2);
 
 
 always @(posedge clk or posedge rst) begin

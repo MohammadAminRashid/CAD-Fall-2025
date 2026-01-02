@@ -1,13 +1,19 @@
 module datapath(
   input clk, rst,
+  input [31:0] i8,
+  input [31:0] i1,
+  input [31:0] i5,
+  input [31:0] i6,
+  input [31:0] i2,
   input [31:0] i4,
   input [31:0] i7,
   input [31:0] i3,
-  input [31:0] i6,
-  input [31:0] i1,
-  input [31:0] i2,
-  input [31:0] i8,
-  input [31:0] i5,
+  input [3:0] mul1_sel1, mul1_sel2,
+  input mul1_op,
+  input [3:0] log1_sel1, log1_sel2,
+  input log1_op,
+  input [3:0] log2_sel1, log2_sel2,
+  input log2_op,
   input result_en,
   input reg_10_en,
   input reg_13_en,
@@ -26,6 +32,12 @@ reg [31:0] reg_6;
 reg [31:0] reg_9;
 
 
+wire [31:0] mul1_out;
+reg [31:0] mul1_in1, mul1_in2;
+wire [31:0] log1_out;
+reg [31:0] log1_in1, log1_in2;
+wire [31:0] log2_out;
+reg [31:0] log2_in1, log2_in2;
 always @(*) begin
   case (log1_sel1)
     4'd0: log1_in1 = i5;
@@ -72,6 +84,12 @@ always @(*) begin
 end
 
 
+// MUL Unit 1
+assign mul1_out = (mul1_op == 1'b0) ? (mul1_in1 * mul1_in2) : (mul1_in1 / mul1_in2);
+// LOG Unit 1
+assign log1_out = (log1_op == 1'b0) ? (log1_in1 & log1_in2) : (log1_in1 | log1_in2);
+// LOG Unit 2
+assign log2_out = (log2_op == 1'b0) ? (log2_in1 & log2_in2) : (log2_in1 | log2_in2);
 
 
 always @(posedge clk or posedge rst) begin

@@ -1,6 +1,14 @@
 module controller(
   input clk, rst, start,
   output reg op_ready,
+  output reg [3:0] alu1_sel1, alu1_sel2,
+  output reg alu1_op,
+  output reg [3:0] alu2_sel1, alu2_sel2,
+  output reg alu2_op,
+  output reg [3:0] mul1_sel1, mul1_sel2,
+  output reg mul1_op,
+  output reg [3:0] log1_sel1, log1_sel2,
+  output reg log1_op,
   output reg done, result_en,
   output reg reg_10_en, reg_2_en, reg_4_en, reg_7_en, reg_8_en );
 
@@ -19,6 +27,10 @@ end
 
 always @(*) begin
   op_ready = 0; next_state = state; result_en = 0; done = 0;
+  alu1_sel1 = 0; alu1_sel2 = 0; alu1_op = 0;
+  alu2_sel1 = 0; alu2_sel2 = 0; alu2_op = 0;
+  mul1_sel1 = 0; mul1_sel2 = 0; mul1_op = 0;
+  log1_sel1 = 0; log1_sel2 = 0; log1_op = 0;
   reg_2_en = 0;
   reg_4_en = 0;
   reg_7_en = 0;

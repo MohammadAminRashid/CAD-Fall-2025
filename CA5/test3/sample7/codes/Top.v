@@ -15,6 +15,12 @@ module Top(
 );
 
   wire op_ready;
+  wire [3:0] mul1_sel1, mul1_sel2;
+  wire mul1_op;
+  wire [3:0] log1_sel1, log1_sel2;
+  wire log1_op;
+  wire [3:0] log2_sel1, log2_sel2;
+  wire log2_op;
   wire reg_10_en;
   wire reg_13_en;
   wire reg_14_en;
@@ -29,6 +35,9 @@ module Top(
     .rst(rst),
     .start(start),
     .op_ready(op_ready),
+    .mul1_sel1(mul1_sel1), .mul1_sel2(mul1_sel2), .mul1_op(mul1_op),
+    .log1_sel1(log1_sel1), .log1_sel2(log1_sel2), .log1_op(log1_op),
+    .log2_sel1(log2_sel1), .log2_sel2(log2_sel2), .log2_op(log2_op),
     .done(done),
     .result_en(result_en),
     .reg_10_en(reg_10_en),
@@ -51,6 +60,9 @@ module Top(
     .i6(i6),
     .i7(i7),
     .i8(i8),
+    .mul1_sel1(mul1_sel1), .mul1_sel2(mul1_sel2), .mul1_op(mul1_op),
+    .log1_sel1(log1_sel1), .log1_sel2(log1_sel2), .log1_op(log1_op),
+    .log2_sel1(log2_sel1), .log2_sel2(log2_sel2), .log2_op(log2_op),
     .result_en(result_en),
     .reg_10_en(reg_10_en),
     .reg_13_en(reg_13_en),
