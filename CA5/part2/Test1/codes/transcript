@@ -1,0 +1,28 @@
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of TestBench.v was successful.
+# Compile of Top.v was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.tb_top
+# vsim -gui work.tb_top 
+# Start time: 21:27:10 on Jan 07,2026
+# Loading work.tb_top
+# Loading work.Top
+# Loading work.controller
+# Loading work.datapath
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/tb_top/clk \
+sim:/tb_top/rst \
+sim:/tb_top/start \
+sim:/tb_top/i1 \
+sim:/tb_top/i2 \
+sim:/tb_top/i3 \
+sim:/tb_top/i4 \
+sim:/tb_top/result \
+sim:/tb_top/done
+run -all
+# TB finished at time 332
+# ** Note: $stop    : C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/part2/Test2/codes/TestBench.v(163)
+#    Time: 332 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at C:/Users/Asus/Desktop/SEMESTER5/CAD/CA1/CA5/part2/Test2/codes/TestBench.v line 163
